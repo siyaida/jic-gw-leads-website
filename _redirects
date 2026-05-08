@@ -1,0 +1,10 @@
+# Netlify redirects for SPA-like behavior and clean URLs
+/program          /program.html          200
+/employers        /employers.html        200
+/why-gw           /why-gw.html           200
+/consultation     /consultation.html     200
+
+# Optional: redirect old or alternate paths
+/engineering      /program.html          301
+/partners         /employers.html        301
+/contact          /consultation.html     301
