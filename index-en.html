@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M.S. Engineering Management — GW × JIC | Book Your Free Consultation</title>
+<meta name="description" content="ABET-accredited M.S. in Engineering Management from George Washington University. Part-time, 100% online, exclusive Saudi pathway through Jeddah International College.">
+<meta property="og:title" content="M.S. Engineering Management — GW × JIC">
+<meta property="og:description" content="ABET-accredited, part-time, online — for working Saudi engineers">
+<style>
+  :root {
+    --primary: #1e3a5f;
+    --primary-light: #2d5a87;
+    --accent: #c9a227;
+    --accent-hover: #b8921f;
+    --bg: #ffffff;
+    --bg-warm: #fdfbf7;
+    --bg-card: #ffffff;
+    --text: #1a1a2e;
+    --text-muted: #6b7280;
+    --text-light: #9ca3af;
+    --border: #e5e7eb;
+    --border-hover: #d1d5db;
+    --green: #059669;
+    --shadow: 0 4px 24px rgba(0,0,0,0.06);
+    --radius: 16px;
+    --font: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: var(--font); background: var(--bg); color: var(--text); line-height:1.7; }
+  ::selection { background: var(--primary); color:#fff; }
+  a { text-decoration:none; color: inherit; }
+  .container { max-width:1100px; margin:0 auto; padding:0 24px; }
+
+  .lang-bar { background: var(--bg-warm); border-bottom: 1px solid var(--border); padding: 8px 0; font-size: 13px; }
+  .lang-bar .container { display:flex; justify-content:space-between; align-items:center; }
+  .lang-bar .lang-links { display:flex; gap:16px; }
+  .lang-bar a { color: var(--text-muted); font-weight:500; transition:color 0.2s; }
+  .lang-bar a:hover, .lang-bar a.active { color: var(--primary); }
+
+  header { position:sticky; top:0; z-index:100; background:rgba(255,255,255,0.95); backdrop-filter:blur(16px); border-bottom:1px solid var(--border); }
+  header .container { display:flex; align-items:center; justify-content:space-between; height:64px; }
+  .logo { display:flex; align-items:center; gap:12px; }
+  .logo-mark { width:40px; height:40px; border-radius:10px; background:linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; color:#fff; }
+  .logo-text { font-weight:700; font-size:16px; }
+  .logo-text span { font-weight:400; font-size:12px; color:var(--text-muted); display:block; }
+  nav { display:flex; gap:8px; }
+  nav a { padding:8px 14px; border-radius:8px; font-size:14px; font-weight:500; color:var(--text-muted); transition:all 0.2s; }
+  nav a:hover, nav a.active { background: var(--bg-warm); color: var(--primary); }
+  .nav-cta { background: var(--primary) !important; color: #fff !important; padding: 8px 18px !important; }
+  .nav-cta:hover { background: var(--primary-light) !important; }
+
+  .hero { padding: 80px 0 60px; background: linear-gradient(180deg, var(--bg-warm) 0%, var(--bg) 100%); }
+  .hero-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items:center; }
+  .hero h1 { font-size: clamp(28px, 3.5vw, 44px); font-weight:800; line-height:1.2; letter-spacing:-0.02em; }
+  .hero h1 .highlight { color: var(--primary-light); }
+  .hero p { font-size: 17px; color: var(--text-muted); margin-top: 16px; max-width: 480px; }
+  .hero-stats { display:flex; gap: 24px; margin-top: 32px; }
+  .hero-stat { text-align:center; }
+  .hero-stat .num { font-size: 28px; font-weight:700; color: var(--primary); }
+  .hero-stat .lbl { font-size: 12px; color: var(--text-light); }
+  .hero-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow); }
+  .hero-card .card-label { font-size: 12px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; color: var(--text-light); margin-bottom: 12px; }
+  .hero-card h3 { font-size: 22px; margin-bottom: 8px; }
+  .hero-card p { font-size: 14px; margin-top: 0; }
+  .btn { display: inline-flex; align-items:center; gap:8px; padding: 14px 28px; border-radius: 12px; font-weight:600; font-size: 15px; cursor:pointer; border:none; transition: all 0.2s; }
+  .btn-primary { background: var(--primary); color: #fff; }
+  .btn-primary:hover { background: var(--primary-light); transform: translateY(-1px); box-shadow: var(--shadow); }
+  .btn-accent { background: var(--accent); color: #1a1a2e; }
+  .btn-accent:hover { background: var(--accent-hover); transform: translateY(-1px); }
+  .btn-outline { background: transparent; border: 2px solid var(--border); color: var(--text); }
+  .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+  .hero-actions { display:flex; gap: 12px; margin-top: 28px; flex-wrap:wrap; }
+
+  .urgency { background: linear-gradient(90deg, #fef3c7 0%, #fde68a 100%); border: 1px solid #fcd34d; border-radius: 12px; padding: 16px 24px; margin-top: 40px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap: 12px; }
+  .urgency p { font-size: 14px; font-weight:600; color: #92400e; margin:0; }
+  .urgency .badge { background: #fff; color: #92400e; font-size: 12px; font-weight:700; padding: 4px 12px; border-radius: 20px; }
+
+  .section { padding: 64px 0; }
+  .section-header { text-align:center; max-width: 600px; margin: 0 auto 48px; }
+  .section-label { font-size: 12px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color: var(--primary-light); margin-bottom: 12px; }
+  .section h2 { font-size: clamp(24px, 2.5vw, 36px); font-weight:700; line-height:1.2; }
+  .section p.desc { font-size: 16px; color: var(--text-muted); margin-top: 12px; }
+
+  .jic-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px; display:grid; grid-template-columns: 120px 1fr; gap: 32px; align-items:center; box-shadow: var(--shadow); }
+  .jic-logo { width: 120px; height: 120px; border-radius: 20px; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); display:flex; align-items:center; justify-content:center; font-size: 48px; }
+  .jic-card h3 { font-size: 24px; margin-bottom: 8px; }
+  .jic-card p { font-size: 15px; color: var(--text-muted); }
+  .jic-meta { display:flex; gap: 24px; margin-top: 20px; flex-wrap:wrap; }
+  .jic-meta-item { display:flex; align-items:center; gap: 8px; font-size: 13px; color: var(--text-muted); }
+  .jic-meta-item .icon { font-size: 16px; }
+
+  .feature-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .feature { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; transition: all 0.3s; }
+  .feature:hover { border-color: var(--border-hover); box-shadow: var(--shadow); transform: translateY(-2px); }
+  .feature .icon { font-size: 32px; margin-bottom: 16px; }
+  .feature h3 { font-size: 17px; font-weight:700; margin-bottom: 8px; }
+  .feature p { font-size: 14px; color: var(--text-muted); line-height:1.6; }
+
+  .timeline { display:flex; gap: 0; justify-content:center; flex-wrap:wrap; }
+  .timeline-step { text-align:center; padding: 20px 16px; min-width: 120px; position:relative; }
+  .timeline-step:not(:last-child)::after { content: ''; position:absolute; left: 100%; top: 28px; transform:translateX(-50%); width: 40px; height: 2px; background: var(--border); }
+  .timeline-step .step-num { width: 40px; height: 40px; border-radius: 50%; background: var(--primary); color: #fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size: 14px; margin: 0 auto 12px; }
+  .timeline-step .step-title { font-size: 13px; font-weight:600; }
+  .timeline-step .step-desc { font-size: 11px; color: var(--text-light); margin-top: 4px; }
+
+  .testi-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .testi { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; }
+  .testi .stars { color: var(--accent); font-size: 16px; margin-bottom: 12px; }
+  .testi p { font-size: 14px; color: var(--text-muted); font-style:italic; line-height:1.7; }
+  .testi .author { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+  .testi .author-name { font-size: 14px; font-weight:600; }
+  .testi .author-role { font-size: 12px; color: var(--text-light); }
+
+  .cta-section { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: #fff; padding: 80px 0; text-align:center; }
+  .cta-section h2 { font-size: clamp(24px, 3vw, 40px); font-weight:800; }
+  .cta-section p { font-size: 17px; color: rgba(255,255,255,0.8); margin-top: 16px; max-width: 500px; margin-left:auto; margin-right:auto; }
+  .cta-section .btn-accent { margin-top: 28px; font-size: 17px; padding: 16px 36px; }
+
+  footer { background: var(--bg-warm); border-top: 1px solid var(--border); padding: 40px 0; }
+  footer .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap: 16px; }
+  footer p { font-size: 13px; color: var(--text-light); }
+  footer .links { display:flex; gap: 20px; }
+  footer a { font-size: 13px; color: var(--text-muted); }
+  footer a:hover { color: var(--primary); }
+
+  @media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .feature-grid { grid-template-columns: 1fr; }
+    .testi-grid { grid-template-columns: 1fr; }
+    .jic-card { grid-template-columns: 1fr; text-align:center; }
+    .jic-logo { margin: 0 auto; }
+    .jic-meta { justify-content:center; }
+    .timeline { flex-direction:column; }
+    .timeline-step:not(:last-child)::after { display:none; }
+    header nav { display:none; }
+    .hero-actions { justify-content:center; }
+    .urgency { text-align:center; justify-content:center; }
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="lang-bar">
+  <div class="container">
+    <div>🌍 Language / اللغة</div>
+    <div class="lang-links">
+      <a href="index.html">العربية</a>
+      <a href="index-en.html" class="active">English</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="container">
+    <a href="index-en.html" class="logo">
+      <div class="logo-mark">GW×JIC</div>
+      <div class="logo-text">M.S. Engineering Management<span>George Washington University × Jeddah International College</span></div>
+    </a>
+    <nav>
+      <a href="index-en.html" class="active">Home</a>
+      <a href="program.html">Program</a>
+      <a href="employers.html">Employers</a>
+      <a href="why-gw.html">Why GW</a>
+      <a href="consultation.html" class="nav-cta">Book Consultation</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <h1>From Engineer to<br><span class="highlight">Engineering Leader</span></h1>
+        <p>M.S. in Engineering Management from George Washington University — part-time, 100% online, ABET-accredited. Exclusive Saudi pathway through Jeddah International College.</p>
+        <div class="hero-actions">
+          <a href="consultation.html" class="btn btn-primary">🗓️ Book Your Free Consultation</a>
+          <a href="program.html" class="btn btn-outline">📋 Explore the Program</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="num">100%</div><div class="lbl">Online</div></div>
+          <div class="hero-stat"><div class="num">~2</div><div class="lbl">Years</div></div>
+          <div class="hero-stat"><div class="num">ABET</div><div class="lbl">Accredited</div></div>
+          <div class="hero-stat"><div class="num">R1</div><div class="lbl">Research Univ</div></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-label">Cohort 1 — Now Enrolling</div>
+        <h3>🎯 Kingdom-Wide Exclusive Pathway</h3>
+        <p>GW chose JIC as its exclusive Saudi partner. This means: Arabic academic support, local advising, study groups in Jeddah — with an accredited American degree.</p>
+        <div style="margin-top:20px; padding-top:20px; border-top:1px solid var(--border);">
+          <div style="display:flex; justify-content:space-between; font-size:13px; color:var(--text-muted);">
+            <span>🎓 GW School of Engineering</span>
+            <span>🇸🇦 Saudi Exclusive Pathway</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="urgency">
+      <p>🔥 Cohort 1 — Limited Seats | Applications Now Open</p>
+      <span class="badge">Now Enrolling</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-warm);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Who We Are</div>
+      <h2>Jeddah International College — Your Gateway to GW</h2>
+    </div>
+    <div class="jic-card">
+      <div class="jic-logo">🏛️</div>
+      <div>
+        <h3>George Washington University × Jeddah International College</h3>
+        <p>Jeddah International College (JIC) is a leading Saudi educational institution delivering internationally recognized academic programs. Through our partnership with George Washington University (GW) — one of America's premier research universities — we offer Saudi engineers a unique opportunity to earn an American master's degree without leaving their careers.</p>
+        <div class="jic-meta">
+          <div class="jic-meta-item"><span class="icon">📍</span> Jeddah, Saudi Arabia</div>
+          <div class="jic-meta-item"><span class="icon">🤝</span> GW's Exclusive Saudi Partner</div>
+          <div class="jic-meta-item"><span class="icon">🗣️</span> Arabic Academic Support</div>
+          <div class="jic-meta-item"><span class="icon">🎓</span> Graduates at PIF & NEOM</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Why This Program</div>
+      <h2>Built for the Working Saudi Engineer</h2>
+      <p class="desc">No career break. No travel. No full-time commitment. Just progress — professionally and academically.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="icon">💻</div>
+        <h3>100% Online</h3>
+        <p>Asynchronous study from any Saudi city. Recorded lectures. Flexible assignments. No mandatory attendance.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">⏱️</div>
+        <h3>Part-Time</h3>
+        <p>Just 6–9 study hours per week. Keep working while you advance. Balance is possible.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🏅</div>
+        <h3>ABET Accredited</h3>
+        <p>Same accreditation as KFUPM. Recognized by the Saudi Council of Engineers and Ministry of Education.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🗣️</div>
+        <h3>Arabic Support</h3>
+        <p>JIC provides Arabic advising, academic coaching, local study groups, and 24/7 technical support.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🌐</div>
+        <h3>GW Global Network</h3>
+        <p>R1 research university in the heart of D.C. Alumni network at NASA, the Pentagon, and Fortune 500 companies.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🇸🇦</div>
+        <h3>Saudi Capstone</h3>
+        <p>Capstone project tailored to engineering management challenges in Saudi megaprojects. Not theoretical — practical.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-warm);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Your Journey</div>
+      <h2>From Application to Graduation</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-step"><div class="step-num">1</div><div class="step-title">Free Consultation</div><div class="step-desc">30 minutes</div></div>
+      <div class="timeline-step"><div class="step-num">2</div><div class="step-title">Apply Online</div><div class="step-desc">Online form</div></div>
+      <div class="timeline-step"><div class="step-num">3</div><div class="step-title">Admitted</div><div class="step-desc">2–3 weeks</div></div>
+      <div class="timeline-step"><div class="step-num">4</div><div class="step-title">Study</div><div class="step-desc">~24 months</div></div>
+      <div class="timeline-step"><div class="step-num">5</div><div class="step-title">Capstone</div><div class="step-desc">Saudi project</div></div>
+      <div class="timeline-step"><div class="step-num">6</div><div class="step-title">Graduate 🎓</div><div class="step-desc">GW degree</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Saudi Context</div>
+      <h2>Vision 2030 Needs Engineering Leaders</h2>
+      <p class="desc">Trillion-riyal giga-projects need engineers who can lead — not just execute.</p>
+    </div>
+    <div class="feature-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="feature">
+        <div class="icon">🏗️</div>
+        <h3>NEOM</h3>
+        <p>$500 billion. Linear city. Thousands of project managers needed.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🏨</div>
+        <h3>Red Sea Global</h3>
+        <p>50 luxury resorts. Sustainable infrastructure. World-class tourism engineering.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🏠</div>
+        <h3>Roshn</h3>
+        <p>400,000 housing units. The largest urban development project in history.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:32px;">
+      <a href="employers.html" class="btn btn-outline">🏢 Explore Partner Employers →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-warm);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Student Voices</div>
+      <h2>What Our Engineers Say</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"This program changed my career trajectory. I learned project management from a strategic, not just technical, perspective. Today I lead a team on a major project."</p>
+        <div class="author"><div class="author-name">Ahmad Al-Otaibi</div><div class="author-role">Project Manager, Saudi Construction Co.</div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"The best part is the flexibility. I kept my full-time job and studied in the evenings. JIC's Arabic support was a game-changer."</p>
+        <div class="author"><div class="author-name">Sarah Al-Qahtani</div><div class="author-role">Systems Engineer, Technology Sector</div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"The GW degree opened doors that didn't exist before. International recruitment, major projects, leadership opportunities — all became possible."</p>
+        <div class="author"><div class="author-name">Khalid Al-Zahrani</div><div class="author-role">Engineering Director, NEOM</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Step Into Leadership?</h2>
+    <p>Your free 30-minute consultation with one of our advisors. We discuss your goals, review your profile, and map the best path forward.</p>
+    <a href="consultation.html" class="btn btn-accent">🗓️ Book Your Consultation Now</a>
+    <div style="margin-top:24px; font-size:13px; color:rgba(255,255,255,0.6);">No commitment. No hidden fees. Just a helpful conversation.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Jeddah International College — George Washington University Partner in Saudi Arabia</p>
+    <div class="links">
+      <a href="program.html">Program</a>
+      <a href="employers.html">Employers</a>
+      <a href="why-gw.html">Why GW</a>
+      <a href="consultation.html">Consultation</a>
+      <a href="index.html">العربية</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
