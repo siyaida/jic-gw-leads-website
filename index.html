@@ -1,457 +1,440 @@
 <!DOCTYPE html>
-<html lang="ar" data-lang="ar" dir="rtl">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ماجستير إدارة الهندسة — GW × JIC | M.S. Engineering Management</title>
-  <meta name="description" content="برنامج ماجستير إدارة الهندسة من جامعة جورج واشنطن عبر الإنترنت، دوام جزئي، مع مسار حصري عبر كلية جدة الدولية. احجز استشارتك المجانية.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ماجستير إدارة الهندسة — GW × JIC | احجز استشارتك المجانية</title>
+<meta name="description" content="برنامج ماجستير إدارة الهندسة من جامعة جورج واشنطن، معتمد ABET، دوام جزئي عن بُعد، عبر مسار حصري بكلية جدة الدولية">
+<meta property="og:title" content="ماجستير إدارة الهندسة — GW × JIC">
+<meta property="og:description" content="برنامج معتمد، دوام جزئي، عن بُعد — للمهندسين السعوديين">
+<style>
+  :root {
+    --primary: #1e3a5f;
+    --primary-light: #2d5a87;
+    --accent: #c9a227;
+    --accent-hover: #b8921f;
+    --bg: #ffffff;
+    --bg-warm: #fdfbf7;
+    --bg-card: #ffffff;
+    --text: #1a1a2e;
+    --text-muted: #6b7280;
+    --text-light: #9ca3af;
+    --border: #e5e7eb;
+    --border-hover: #d1d5db;
+    --green: #059669;
+    --green-light: #10b981;
+    --shadow: 0 4px 24px rgba(0,0,0,0.06);
+    --shadow-lg: 0 8px 48px rgba(0,0,0,0.1);
+    --radius: 16px;
+    --font: 'Segoe UI', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: var(--font); background: var(--bg); color: var(--text); line-height:1.7; }
+  ::selection { background: var(--primary); color:#fff; }
+  a { text-decoration:none; color: inherit; }
+  .container { max-width:1100px; margin:0 auto; padding:0 24px; }
+
+  /* Lang Switcher */
+  .lang-bar {
+    background: var(--bg-warm); border-bottom: 1px solid var(--border);
+    padding: 8px 0; font-size: 13px;
+  }
+  .lang-bar .container { display:flex; justify-content:space-between; align-items:center; }
+  .lang-bar .lang-links { display:flex; gap:16px; }
+  .lang-bar a { color: var(--text-muted); font-weight:500; transition:color 0.2s; }
+  .lang-bar a:hover, .lang-bar a.active { color: var(--primary); }
+
+  /* Header */
+  header { position:sticky; top:0; z-index:100; background:rgba(255,255,255,0.95); backdrop-filter:blur(16px); border-bottom:1px solid var(--border); }
+  header .container { display:flex; align-items:center; justify-content:space-between; height:64px; }
+  .logo { display:flex; align-items:center; gap:12px; }
+  .logo-mark { width:40px; height:40px; border-radius:10px; background:linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; color:#fff; }
+  .logo-text { font-weight:700; font-size:16px; }
+  .logo-text span { font-weight:400; font-size:12px; color:var(--text-muted); display:block; }
+  nav { display:flex; gap:8px; }
+  nav a { padding:8px 14px; border-radius:8px; font-size:14px; font-weight:500; color:var(--text-muted); transition:all 0.2s; }
+  nav a:hover, nav a.active { background: var(--bg-warm); color: var(--primary); }
+  .nav-cta { background: var(--primary) !important; color: #fff !important; padding: 8px 18px !important; }
+  .nav-cta:hover { background: var(--primary-light) !important; }
+
+  /* Hero */
+  .hero { padding: 80px 0 60px; background: linear-gradient(180deg, var(--bg-warm) 0%, var(--bg) 100%); }
+  .hero-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items:center; }
+  .hero h1 { font-size: clamp(28px, 3.5vw, 44px); font-weight:800; line-height:1.2; letter-spacing:-0.02em; }
+  .hero h1 .highlight { color: var(--primary-light); }
+  .hero p { font-size: 17px; color: var(--text-muted); margin-top: 16px; max-width: 480px; }
+  .hero-stats { display:flex; gap: 24px; margin-top: 32px; }
+  .hero-stat { text-align:center; }
+  .hero-stat .num { font-size: 28px; font-weight:700; color: var(--primary); }
+  .hero-stat .lbl { font-size: 12px; color: var(--text-light); }
+  .hero-card {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 32px; box-shadow: var(--shadow);
+  }
+  .hero-card .card-label { font-size: 12px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; color: var(--text-light); margin-bottom: 12px; }
+  .hero-card h3 { font-size: 22px; margin-bottom: 8px; }
+  .hero-card p { font-size: 14px; margin-top: 0; }
+  .btn {
+    display: inline-flex; align-items:center; gap:8px; padding: 14px 28px;
+    border-radius: 12px; font-weight:600; font-size: 15px; cursor:pointer; border:none;
+    transition: all 0.2s;
+  }
+  .btn-primary { background: var(--primary); color: #fff; }
+  .btn-primary:hover { background: var(--primary-light); transform: translateY(-1px); box-shadow: var(--shadow); }
+  .btn-accent { background: var(--accent); color: #1a1a2e; }
+  .btn-accent:hover { background: var(--accent-hover); transform: translateY(-1px); }
+  .btn-outline { background: transparent; border: 2px solid var(--border); color: var(--text); }
+  .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+  .hero-actions { display:flex; gap: 12px; margin-top: 28px; flex-wrap:wrap; }
+
+  /* Urgency Bar */
+  .urgency { background: linear-gradient(90deg, #fef3c7 0%, #fde68a 100%); border: 1px solid #fcd34d; border-radius: 12px; padding: 16px 24px; margin-top: 40px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap: 12px; }
+  .urgency p { font-size: 14px; font-weight:600; color: #92400e; margin:0; }
+  .urgency .badge { background: #fff; color: #92400e; font-size: 12px; font-weight:700; padding: 4px 12px; border-radius: 20px; }
+
+  /* Sections */
+  .section { padding: 64px 0; }
+  .section-header { text-align:center; max-width: 600px; margin: 0 auto 48px; }
+  .section-label { font-size: 12px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color: var(--primary-light); margin-bottom: 12px; }
+  .section h2 { font-size: clamp(24px, 2.5vw, 36px); font-weight:700; line-height:1.2; }
+  .section p.desc { font-size: 16px; color: var(--text-muted); margin-top: 12px; }
+
+  /* Who is JIC */
+  .jic-card {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 40px; display:grid; grid-template-columns: 120px 1fr; gap: 32px; align-items:center;
+    box-shadow: var(--shadow);
+  }
+  .jic-logo {
+    width: 120px; height: 120px; border-radius: 20px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    display:flex; align-items:center; justify-content:center;
+    font-size: 48px;
+  }
+  .jic-card h3 { font-size: 24px; margin-bottom: 8px; }
+  .jic-card p { font-size: 15px; color: var(--text-muted); }
+  .jic-meta { display:flex; gap: 24px; margin-top: 20px; flex-wrap:wrap; }
+  .jic-meta-item { display:flex; align-items:center; gap: 8px; font-size: 13px; color: var(--text-muted); }
+  .jic-meta-item .icon { font-size: 16px; }
+
+  /* Features */
+  .feature-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .feature {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 28px; transition: all 0.3s;
+  }
+  .feature:hover { border-color: var(--border-hover); box-shadow: var(--shadow); transform: translateY(-2px); }
+  .feature .icon { font-size: 32px; margin-bottom: 16px; }
+  .feature h3 { font-size: 17px; font-weight:700; margin-bottom: 8px; }
+  .feature p { font-size: 14px; color: var(--text-muted); line-height:1.6; }
+
+  /* Program Timeline */
+  .timeline { display:flex; gap: 0; justify-content:center; flex-wrap:wrap; }
+  .timeline-step { text-align:center; padding: 20px 16px; min-width: 120px; position:relative; }
+  .timeline-step:not(:last-child)::after {
+    content: ''; position:absolute; left: 100%; top: 28px; transform:translateX(-50%);
+    width: 40px; height: 2px; background: var(--border);
+  }
+  .timeline-step .step-num {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--primary); color: #fff; display:flex; align-items:center; justify-content:center;
+    font-weight:700; font-size: 14px; margin: 0 auto 12px;
+  }
+  .timeline-step .step-title { font-size: 13px; font-weight:600; }
+  .timeline-step .step-desc { font-size: 11px; color: var(--text-light); margin-top: 4px; }
+
+  /* Testimonials */
+  .testi-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .testi {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 28px;
+  }
+  .testi .stars { color: var(--accent); font-size: 16px; margin-bottom: 12px; }
+  .testi p { font-size: 14px; color: var(--text-muted); font-style:italic; line-height:1.7; }
+  .testi .author { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+  .testi .author-name { font-size: 14px; font-weight:600; }
+  .testi .author-role { font-size: 12px; color: var(--text-light); }
+
+  /* CTA Section */
+  .cta-section {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: #fff; padding: 80px 0; text-align:center;
+  }
+  .cta-section h2 { font-size: clamp(24px, 3vw, 40px); font-weight:800; }
+  .cta-section p { font-size: 17px; color: rgba(255,255,255,0.8); margin-top: 16px; max-width: 500px; margin-left:auto; margin-right:auto; }
+  .cta-section .btn-accent { margin-top: 28px; font-size: 17px; padding: 16px 36px; }
+
+  /* Footer */
+  footer { background: var(--bg-warm); border-top: 1px solid var(--border); padding: 40px 0; }
+  footer .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap: 16px; }
+  footer p { font-size: 13px; color: var(--text-light); }
+  footer .links { display:flex; gap: 20px; }
+  footer a { font-size: 13px; color: var(--text-muted); }
+  footer a:hover { color: var(--primary); }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .feature-grid { grid-template-columns: 1fr; }
+    .testi-grid { grid-template-columns: 1fr; }
+    .jic-card { grid-template-columns: 1fr; text-align:center; }
+    .jic-logo { margin: 0 auto; }
+    .jic-meta { justify-content:center; }
+    .timeline { flex-direction:column; }
+    .timeline-step:not(:last-child)::after { display:none; }
+    header nav { display:none; }
+    .hero-actions { justify-content:center; }
+    .urgency { text-align:center; justify-content:center; }
+  }
+</style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">GW <span>×</span> JIC</a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active"><span class="lang-ar inline">الرئيسية</span><span class="lang-en inline">Home</span></a></li>
-        <li><a href="program.html"><span class="lang-ar inline">البرنامج</span><span class="lang-en inline">Program</span></a></li>
-        <li><a href="employers.html"><span class="lang-ar inline">الشركات</span><span class="lang-en inline">Employers</span></a></li>
-        <li><a href="why-gw.html"><span class="lang-ar inline">لماذا GW</span><span class="lang-en inline">Why GW</span></a></li>
-        <li><a href="consultation.html"><span class="lang-ar inline">استشارة</span><span class="lang-en inline">Consultation</span></a></li>
-      </ul>
-      <button class="lang-toggle" aria-label="Toggle language">EN</button>
-      <button class="mobile-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
-    </div>
-  </nav>
-
-  <!-- Mobile Drawer -->
-  <div class="mobile-drawer">
-    <button class="close-btn" aria-label="Close menu">&times;</button>
-    <a href="index.html"><span class="lang-ar inline">الرئيسية</span><span class="lang-en inline">Home</span></a>
-    <a href="program.html"><span class="lang-ar inline">البرنامج</span><span class="lang-en inline">Program</span></a>
-    <a href="employers.html"><span class="lang-ar inline">الشركات</span><span class="lang-en inline">Employers</span></a>
-    <a href="why-gw.html"><span class="lang-ar inline">لماذا GW</span><span class="lang-en inline">Why GW</span></a>
-    <a href="consultation.html"><span class="lang-ar inline">احجز استشارة</span><span class="lang-en inline">Book Consultation</span></a>
-    <button class="lang-toggle" style="margin-top:1rem;">EN</button>
-  </div>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-mesh"></div>
-    <div class="hero-content">
-      <h1 class="reveal">
-        <span class="lang-ar inline">ماجستير إدارة الهندسة — <span class="gold-text">GW × JIC</span></span>
-        <span class="lang-en inline">M.S. Engineering Management — <span class="gold-text">GW × JIC</span></span>
-      </h1>
-      <p class="hero-sub reveal reveal-delay-1">
-        <span class="lang-ar inline">برنامج عبر الإنترنت، دوام جزئي، معتمد — صُمم للمهندسين السعوديين العاملين الذين يرغبون في الانتقال إلى القيادة دون مغادرة وظائفهم</span>
-        <span class="lang-en inline">Online, part-time, accredited — designed for working Saudi engineers ready to step into leadership without leaving their jobs</span>
-      </p>
-      <div class="reveal reveal-delay-2" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-        <a href="consultation.html" class="btn btn-primary magnetic-btn">
-          <span class="lang-ar inline">احجز استشارتك المجانية</span>
-          <span class="lang-en inline">Book Your Free Consultation</span>
-        </a>
-        <a href="program.html" class="btn btn-secondary magnetic-btn">
-          <span class="lang-ar inline">تعرف على البرنامج</span>
-          <span class="lang-en inline">Explore the Program</span>
-        </a>
-      </div>
-      <div class="hero-stats reveal reveal-delay-3">
-        <div class="stat-pill"><strong>100%</strong> <span class="lang-ar inline">عن بُعد</span><span class="lang-en inline">Online</span></div>
-        <div class="stat-pill"><strong>~2</strong> <span class="lang-ar inline">سنوات</span><span class="lang-en inline">Years</span></div>
-        <div class="stat-pill"><strong>R1</strong> <span class="lang-ar inline">جامعة بحثية</span><span class="lang-en inline">Research Univ</span></div>
-        <div class="stat-pill"><strong>ABET</strong> <span class="lang-ar inline">معتمد</span><span class="lang-en inline">Accredited</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Urgency Bar -->
-  <div class="urgency-bar reveal">
-    <p>
-      <span class="lang-ar inline">🔥 الدفعة الأولى — أماكن محدودة | مسار حصري عبر JIC على مستوى المملكة</span>
-      <span class="lang-en inline">🔥 Cohort 1 — Limited Seats | JIC Exclusive Kingdom-wide Pathway</span>
-    </p>
-    <div class="countdown">
-      <span class="countdown-digit">C</span><span class="countdown-digit">1</span>
-      <span style="color:var(--graytext);">—</span>
-      <span class="countdown-digit">فتح</span><span class="countdown-digit">القبول</span>
+<!-- Language Bar -->
+<div class="lang-bar">
+  <div class="container">
+    <div>🌍 اللغة / Language</div>
+    <div class="lang-links">
+      <a href="index.html" class="active">العربية</a>
+      <a href="index-en.html">English</a>
     </div>
   </div>
+</div>
 
-  <!-- Vision 2030 Context -->
-  <section class="section" id="vision">
-    <div class="section-container">
-      <div class="reveal">
-        <p class="section-label"><span class="lang-ar inline">السياق السعودي</span><span class="lang-en inline">Saudi Context</span></p>
-        <h2 class="section-title">
-          <span class="lang-ar inline">رؤية 2030 فجّرت الطلب على قادة الهندسة</span>
-          <span class="lang-en inline">Vision 2030 Has Ignited Demand for Engineering Leaders</span>
-        </h2>
-        <p class="section-desc">
-          <span class="lang-ar inline">مشاريع ضخمة بقيمة تريليونات الريالات تحتاج مهندسين يستطيعون القيادة — ليس فقط التنفيذ. الاستراتيجية الصناعية الوطنية تستهدف 4 ملايين وظيفة تصنيعية، وكل هدف يحتاج مديري هندسة.</span>
-          <span class="lang-en inline">Trillion-riyal giga-projects need engineers who can lead — not just execute. The National Industrial Strategy targets 4 million manufacturing jobs, and every target requires engineering managers.</span>
+<!-- Header -->
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">GW×JIC</div>
+      <div class="logo-text">ماجستير إدارة الهندسة<span>جامعة جورج واشنطن × كلية جدة الدولية</span></div>
+    </a>
+    <nav>
+      <a href="index.html" class="active">الرئيسية</a>
+      <a href="program.html">البرنامج</a>
+      <a href="employers.html">الشركات</a>
+      <a href="why-gw.html">لماذا GW</a>
+      <a href="consultation.html" class="nav-cta">احجز استشارة</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <h1>
+          انتقل من المهندس<br>إلى <span class="highlight">مدير الهندسة</span>
+        </h1>
+        <p>
+          ماجستير إدارة الهندسة من جامعة جورج واشنطن — برنامج دوام جزئي، 100% عن بُعد، معتمد ABET.
+          مسار حصري عبر كلية جدة الدولية للمهندسين السعوديين العاملين.
         </p>
+        <div class="hero-actions">
+          <a href="consultation.html" class="btn btn-primary">🗓️ احجز استشارتك المجانية</a>
+          <a href="program.html" class="btn btn-outline">📋 تعرف على البرنامج</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="num">100%</div><div class="lbl">عن بُعد</div></div>
+          <div class="hero-stat"><div class="num">~2</div><div class="lbl">سنوات</div></div>
+          <div class="hero-stat"><div class="num">ABET</div><div class="lbl">معتمد</div></div>
+          <div class="hero-stat"><div class="num">R1</div><div class="lbl">جامعة بحثية</div></div>
+        </div>
       </div>
-      <div class="giga-grid">
-        <div class="giga-card reveal reveal-delay-1">
-          <div class="giga-card-bg" style="background:linear-gradient(135deg,#1a1a2e,#16213e);"></div>
-          <div class="giga-card-overlay">
-            <span class="badge">PIF</span>
-            <h3><span class="lang-ar inline">نيوم</span><span class="lang-en inline">NEOM</span></h3>
-            <p><span class="lang-ar inline">مدينة خطية، طاقة، مياه، لوجستيات</span><span class="lang-en inline">Linear city, energy, water, logistics</span></p>
-          </div>
-        </div>
-        <div class="giga-card reveal reveal-delay-2">
-          <div class="giga-card-bg" style="background:linear-gradient(135deg,#0f3460,#16213e);"></div>
-          <div class="giga-card-overlay">
-            <span class="badge">PIF</span>
-            <h3><span class="lang-ar inline">البحر الأحمر العالمية</span><span class="lang-en inline">Red Sea Global</span></h3>
-            <p><span class="lang-ar inline">منتجعات، بنية تحتية، هندسة مستدامة</span><span class="lang-en inline">Resorts, infrastructure, sustainable engineering</span></p>
-          </div>
-        </div>
-        <div class="giga-card reveal reveal-delay-3">
-          <div class="giga-card-bg" style="background:linear-gradient(135deg,#1a1a2e,#0f3460);"></div>
-          <div class="giga-card-overlay">
-            <span class="badge">PIF</span>
-            <h3><span class="lang-ar inline">روشن</span><span class="lang-en inline">Roshn</span></h3>
-            <p><span class="lang-ar inline">400 ألف وحدة سكنية — مديرو مشاريع مطلوبون</span><span class="lang-en inline">400K housing units — project managers needed</span></p>
-          </div>
-        </div>
-        <div class="giga-card reveal reveal-delay-1">
-          <div class="giga-card-bg" style="background:linear-gradient(135deg,#16213e,#1a1a2e);"></div>
-          <div class="giga-card-overlay">
-            <span class="badge">PIF</span>
-            <h3><span class="lang-ar inline">البوابة الديوانية</span><span class="lang-en inline">Diriyah Gate</span></h3>
-            <p><span class="lang-ar inline">تراث + هندسة حديثة</span><span class="lang-en inline">Heritage + modern engineering</span></p>
-          </div>
-        </div>
-        <div class="giga-card reveal reveal-delay-2">
-          <div class="giga-card-bg" style="background:linear-gradient(135deg,#0f3460,#1a1a2e);"></div>
-          <div class="giga-card-overlay">
-            <span class="badge">PIF</span>
-            <h3><span class="lang-ar inline">القدية</span><span class="lang-en inline">Qiddiya</span></h3>
-            <p><span class="lang-ar inline">بنية تحتية ترفيهية</span><span class="lang-en inline">Entertainment infrastructure</span></p>
-          </div>
-        </div>
-        <div class="giga-card reveal reveal-delay-3">
-          <div class="giga-card-bg" style="background:linear-gradient(135deg,#1a1a2e,#0f3460);"></div>
-          <div class="giga-card-overlay">
-            <span class="badge">PIF</span>
-            <h3><span class="lang-ar inline">العلا</span><span class="lang-en inline">AlUla</span></h3>
-            <p><span class="lang-ar inline">هندسة سياحة + حفظ</span><span class="lang-en inline">Tourism + conservation engineering</span></p>
+      <div class="hero-card">
+        <div class="card-label">الدفعة الأولى — فتح القبول</div>
+        <h3>🎯 مسار حصري على مستوى المملكة</h3>
+        <p>
+          GW اختارت JIC شريكًا حصريًا للمسار السعودي.
+          هذا يعني: دعم أكاديمي بالعربي، استشارات محلية، ومجموعات دراسية في جدة — مع شهادة أمريكية معتمدة.
+        </p>
+        <div style="margin-top:20px; padding-top:20px; border-top:1px solid var(--border);">
+          <div style="display:flex; justify-content:space-between; font-size:13px; color:var(--text-muted);">
+            <span>🎓 GW School of Engineering</span>
+            <span>🇸🇦 مسار سعودي حصري</span>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Program Snapshot -->
-  <section class="section" style="background:rgba(201,162,39,0.02);">
-    <div class="section-container">
-      <div class="reveal text-center">
-        <p class="section-label"><span class="lang-ar inline">نظرة سريعة</span><span class="lang-en inline">At a Glance</span></p>
-        <h2 class="section-title" style="margin:0 auto 0.5rem;">
-          <span class="lang-ar inline">لماذا هذا البرنامج مختلف؟</span>
-          <span class="lang-en inline">Why This Program Stands Apart</span>
-        </h2>
-      </div>
-      <div class="feature-grid">
-        <div class="feature-card reveal reveal-delay-1">
-          <div class="feature-icon">💻</div>
-          <h3><span class="lang-ar inline">100% عن بُعد</span><span class="lang-en inline">100% Online</span></h3>
-          <p><span class="lang-ar inline">دراسة غير متزامنة من أي مدينة سعودية — لا حاجة للسفر أو التوقف الوظيفي</span><span class="lang-en inline">Asynchronous study from any Saudi city — no travel or career break needed</span></p>
-        </div>
-        <div class="feature-card reveal reveal-delay-2">
-          <div class="feature-icon">⏱️</div>
-          <h3><span class="lang-ar inline">دوام جزئي</span><span class="lang-en inline">Part-Time</span></h3>
-          <p><span class="lang-ar inline">6–9 ساعات دراسة أسبوعياً فقط — استمر في عملك أثناء تقدمك الأكاديمي</span><span class="lang-en inline">Just 6–9 study hours/week — keep working while you advance</span></p>
-        </div>
-        <div class="feature-card reveal reveal-delay-3">
-          <div class="feature-icon">🏅</div>
-          <h3><span class="lang-ar inline">معتمد ABET</span><span class="lang-en inline">ABET Accredited</span></h3>
-          <p><span class="lang-ar inline">نفس اعتماد كلية KFUPM — معترف به من الهيئة السعودية للمهندسين</span><span class="lang-en inline">Same accreditation as KFUPM — recognized by the Saudi Council of Engineers</span></p>
-        </div>
-        <div class="feature-card reveal reveal-delay-1">
-          <div class="feature-icon">🗣️</div>
-          <h3><span class="lang-ar inline">دعم بالعربية</span><span class="lang-en inline">Arabic Support</span></h3>
-          <p><span class="lang-ar inline">JIC توفر استشارات بالعربي، توجيه أكاديمي، ومجموعات دراسية محلية</span><span class="lang-en inline">JIC provides Arabic advising, academic coaching, and local study groups</span></p>
-        </div>
-        <div class="feature-card reveal reveal-delay-2">
-          <div class="feature-icon">🌐</div>
-          <h3><span class="lang-ar inline">شبكة GW</span><span class="lang-en inline">GW Network</span></h3>
-          <p><span class="lang-ar inline">جامعة R1 بحثية في قلب واشنطن العاصمة — حيث تُبرم الصفقات السعودية الكبرى</span><span class="lang-en inline">R1 research university in the heart of D.C. — where Saudi deals are made</span></p>
-        </div>
-        <div class="feature-card reveal reveal-delay-3">
-          <div class="feature-icon">🇸🇦</div>
-          <h3><span class="lang-ar inline">مشروع ختامي سعودي</span><span class="lang-en inline">Saudi Capstone</span></h3>
-          <p><span class="lang-ar inline">مشروع ختامي مخصص لتحديات إدارة الهندسة في المشاريع الضخمة السعودية</span><span class="lang-en inline">Capstone tailored to engineering management challenges in Saudi megaprojects</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Social Proof Marquee -->
-  <div class="marquee-wrap reveal">
-    <div class="marquee-track">
-      <span class="marquee-item">Saudi Aramco</span>
-      <span class="marquee-item">SABIC</span>
-      <span class="marquee-item">Ma'aden</span>
-      <span class="marquee-item">NEOM</span>
-      <span class="marquee-item">Red Sea Global</span>
-      <span class="marquee-item">Roshn</span>
-      <span class="marquee-item">SAMI</span>
-      <span class="marquee-item">ACWA Power</span>
-      <span class="marquee-item">stc</span>
-      <span class="marquee-item">Saudi National Bank</span>
-      <span class="marquee-item">Qiddiya</span>
-      <span class="marquee-item">Diriyah Gate</span>
-      <span class="marquee-item">AlUla</span>
-      <span class="marquee-item">Saudi Electricity</span>
-      <span class="marquee-item">Sadara</span>
-      <span class="marquee-item">Petro Rabigh</span>
-      <span class="marquee-item">SATORP</span>
-      <span class="marquee-item">Elm</span>
+    <div class="urgency">
+      <p>🔥 الدفعة الأولى — أماكن محدودة | القبول مفتوح الآن</p>
+      <span class="badge">Cohort 1 — Now Open</span>
     </div>
   </div>
+</section>
 
-  <!-- Who Is This For -->
-  <section class="section" id="personas">
-    <div class="section-container">
-      <div class="reveal">
-        <p class="section-label"><span class="lang-ar inline">لمن هذا البرنامج؟</span><span class="lang-en inline">Who Is This For?</span></p>
-        <h2 class="section-title">
-          <span class="lang-ar inline">خمسة مهندسين. مسار واحد إلى القيادة.</span>
-          <span class="lang-en inline">Five Engineers. One Path to Leadership.</span>
-        </h2>
-        <p class="section-desc">
-          <span class="lang-ar inline">إذا وجدت نفسك في إحدى هذه الشخصيات، فأنت بالفعل في المسار الصحيح.</span>
-          <span class="lang-en inline">If you see yourself in one of these profiles, you're already on the right track.</span>
+<!-- Who is JIC -->
+<section class="section" style="background:var(--bg-warm);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">من نحن</div>
+      <h2>كلية جدة الدولية — بوابتك إلى GW</h2>
+    </div>
+    <div class="jic-card">
+      <div class="jic-logo">🏛️</div>
+      <div>
+        <h3>جامعة جورج واشنطن × كلية جدة الدولية</h3>
+        <p>
+          كلية جدة الدولية (JIC) هي مؤسسة تعليمية سعودية رائدة في تقديم برامج أكاديمية دولية.
+          من خلال شراكتنا مع جامعة جورج واشنطن (GW) — إحدى أعرق الجامعات البحثية في الولايات المتحدة —
+          نوفر للمهندسين السعوديين فرصة فريدة لنيل شهادة ماجستير أمريكية معتمدة دون مغادرة وظائفهم.
         </p>
-      </div>
-      <div class="persona-grid">
-        <div class="persona-card reveal reveal-delay-1">
-          <span class="tag"><span class="lang-ar inline">الشخصية 1</span><span class="lang-en inline">Profile 1</span></span>
-          <h3><span class="lang-ar inline">المهندس الكبير العالق</span><span class="lang-en inline">The Stuck Senior Engineer</span></h3>
-          <p class="pain"><span class="lang-ar inline">عشر سنوات في التقنية، الترقيات توقفت، تم تجاوزه في أدوار الإدارة</span><span class="lang-en inline">10+ years technical, promotions stalled, passed over for management</span></p>
-          <p class="aspire"><span class="lang-ar inline">🎯 هدف: قفزة في المسمى والراتب والمصداقية القيادية</span><span class="lang-en inline">🎯 Goal: Title bump, salary jump, leadership credibility</span></p>
-        </div>
-        <div class="persona-card reveal reveal-delay-2">
-          <span class="tag"><span class="lang-ar inline">الشخصية 2</span><span class="lang-en inline">Profile 2</span></span>
-          <h3><span class="lang-ar inline">متسلق المشاريع الضخمة</span><span class="lang-en inline">The Giga-Project Climber</span></h3>
-          <p class="pain"><span class="lang-ar inline">تقني بما يكفي للتوظيف، غير معتمد بما يكفي للقيادة في نيوم أو البحر الأحمر</span><span class="lang-en inline">Technical enough to get hired, not credentialed enough to lead at NEOM or Red Sea</span></p>
-          <p class="aspire"><span class="lang-ar inline">🎯 هدف: دور قيادي في مشروع ضخم</span><span class="lang-en inline">🎯 Goal: Leadership role on a giga-project</span></p>
-        </div>
-        <div class="persona-card reveal reveal-delay-3">
-          <span class="tag"><span class="lang-ar inline">الشخصية 3</span><span class="lang-en inline">Profile 3</span></span>
-          <h3><span class="lang-ar inline">الانتقال من العسكرية للقطاع المدني</span><span class="lang-en inline">Military-to-Civilian Pivot</span></h3>
-          <p class="pain"><span class="lang-ar inline">خلفية هندسة عسكرية ممتازة، غير معترف بها في أنظمة الموارد البشرية المدنية</span><span class="lang-en inline">Strong military engineering background, not recognized in civilian HR systems</span></p>
-          <p class="aspire"><span class="lang-ar inline">🎯 هدف: ترجمة الخبرة الدفاعية إلى قيادة في القطاع الخاص</span><span class="lang-en inline">🎯 Goal: Translate defense expertise into private sector leadership</span></p>
-        </div>
-        <div class="persona-card reveal reveal-delay-1">
-          <span class="tag"><span class="lang-ar inline">الشخصية 4</span><span class="lang-en inline">Profile 4</span></span>
-          <h3><span class="lang-ar inline">وارث العائلة التجارية</span><span class="lang-en inline">Family-Business Heir</span></h3>
-          <p class="pain"><span class="lang-ar inline">متوقع تولي شركة المقاولات/التصنيع العائلية، لا تدريب إداري رسمي</span><span class="lang-en inline">Expected to take over the family contracting/manufacturing firm, no formal management training</span></p>
-          <p class="aspire"><span class="lang-ar inline">🎯 هدف: المصداقية والشبكة لتحديث الشركة العائلية</span><span class="lang-en inline">🎯 Goal: Credibility and network to modernize the family business</span></p>
-        </div>
-        <div class="persona-card reveal reveal-delay-2">
-          <span class="tag"><span class="lang-ar inline">الشخصية 5</span><span class="lang-en inline">Profile 5</span></span>
-          <h3><span class="lang-ar inline">القائدة التقنية النسائية</span><span class="lang-en inline">Female Tech Leader</span></h3>
-          <p class="pain"><span class="lang-ar inline">السقف التقني أصعب للنساء في الهندسة السعودية — تحتاج شهادات تتجاوز التحيز</span><span class="lang-en inline">Technical ceiling is harder for women in Saudi engineering — needs credentials that transcend bias</span></p>
-          <p class="aspire"><span class="lang-ar inline">🎯 هدف: كسر السقف الزجاجي في مجال يهيمن عليه الرجال</span><span class="lang-en inline">🎯 Goal: Break into leadership in a male-dominated field</span></p>
+        <div class="jic-meta">
+          <div class="jic-meta-item"><span class="icon">📍</span> جدة، المملكة العربية السعودية</div>
+          <div class="jic-meta-item"><span class="icon">🤝</span> شريك حصري لـ GW في السعودية</div>
+          <div class="jic-meta-item"><span class="icon">🗣️</span> دعم أكاديمي بالعربية</div>
+          <div class="jic-meta-item"><span class="icon">🎓</span> خريجون في شركات PIF و NEOM</div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Salary & ROI -->
-  <section class="section" style="background:rgba(201,162,39,0.02);">
-    <div class="section-container">
-      <div class="reveal">
-        <p class="section-label"><span class="lang-ar inline">العائد على الاستثمار</span><span class="lang-en inline">Return on Investment</span></p>
-        <h2 class="section-title">
-          <span class="lang-ar inline">الشهادة تدفع ثمنها بنفسها</span>
-          <span class="lang-en inline">The Degree Pays for Itself</span>
-        </h2>
+<!-- Program Features -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">لماذا هذا البرنامج</div>
+      <h2>صُمم للمهندس السعودي العامل</h2>
+      <p class="desc">لا حاجة للتوقف الوظيفي. لا سفر. لا دوام كامل. فقط تقدم — وظيفةً وأكاديميًا.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="icon">💻</div>
+        <h3>100% عن بُعد</h3>
+        <p>دراسة غير متزامنة من أي مدينة سعودية. المحاضرات مسجلة. الواجبات مرنة. لا حضور إلزامي.</p>
       </div>
-      <div class="salary-stats">
-        <div class="salary-stat reveal reveal-delay-1">
-          <div class="number" data-count="50" data-suffix="%">0%</div>
-          <div class="label"><span class="lang-ar inline">قفزة الراتب المتوقعة</span><span class="lang-en inline">Expected Salary Jump</span></div>
-        </div>
-        <div class="salary-stat reveal reveal-delay-2">
-          <div class="number" data-count="24" data-suffix="">0</div>
-          <div class="label"><span class="lang-ar inline">شهراً لاسترداد التكلفة</span><span class="lang-en inline">Months to Break Even</span></div>
-        </div>
-        <div class="salary-stat reveal reveal-delay-3">
-          <div class="number" data-count="2" data-suffix="x">0x</div>
-          <div class="label"><span class="lang-ar inline">مضاعفة حجم المشاريع</span><span class="lang-en inline">Project Size Multiplier</span></div>
-        </div>
-        <div class="salary-stat reveal reveal-delay-1">
-          <div class="number" data-count="30" data-suffix="%+">0%+</div>
-          <div class="label"><span class="lang-ar inline">زيادة في العروض الوظيفية</span><span class="lang-en inline">Increase in Job Offers</span></div>
-        </div>
+      <div class="feature">
+        <div class="icon">⏱️</div>
+        <h3>دوام جزئي</h3>
+        <p>6–9 ساعات دراسة أسبوعياً فقط. استمر في عملك أثناء تقدمك الأكاديمي. التوازن ممكن.</p>
       </div>
-      <div class="progress-wrap reveal reveal-delay-2">
-        <div class="progress-item">
-          <div class="progress-label">
-            <strong><span class="lang-ar inline">مهندس كبير</span><span class="lang-en inline">Senior Engineer</span></strong>
-            <span>25,000 SAR</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill" data-width="45"></div></div>
-        </div>
-        <div class="progress-item">
-          <div class="progress-label">
-            <strong><span class="lang-ar inline">مدير هندسة</span><span class="lang-en inline">Engineering Manager</span></strong>
-            <span>45,000 SAR</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
-        </div>
-        <div class="progress-item">
-          <div class="progress-label">
-            <strong><span class="lang-ar inline">مدير تنفيذي للهندسة</span><span class="lang-en inline">Director of Engineering</span></strong>
-            <span>70,000+ SAR</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill" data-width="100"></div></div>
-        </div>
+      <div class="feature">
+        <div class="icon">🏅</div>
+        <h3>معتمد ABET</h3>
+        <p>نفس الاعتماد الذي تحظى به كلية KFUPM. معترف به من الهيئة السعودية للمهندسين ووزارة التعليم.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🗣️</div>
+        <h3>دعم بالعربية</h3>
+        <p>JIC توفر استشارات بالعربي، توجيه أكاديمي، مجموعات دراسية محلية، ودعم تقني على مدار الساعة.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🌐</div>
+        <h3>شبكة GW العالمية</h3>
+        <p>جامعة R1 بحثية في قلب واشنطن العاصمة. شبكة خريجين في NASA، البنتاغون، وشركات Fortune 500.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🇸🇦</div>
+        <h3>مشروع ختامي سعودي</h3>
+        <p>مشروع ختامي مخصص لتحديات إدارة الهندسة في المشاريع الضخمة السعودية. ليس نظريًا — عملي.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Testimonial Placeholder -->
-  <section class="section">
-    <div class="section-container">
-      <div class="glass-card reveal" style="padding:3rem;max-width:800px;margin:0 auto;text-align:center;">
-        <div style="font-size:3rem;color:var(--gold);opacity:0.3;margin-bottom:1rem;">"</div>
-        <p style="font-size:1.25rem;color:var(--white);font-weight:500;margin-bottom:1.5rem;line-height:1.8;">
-          <span class="lang-ar inline">مكانك لاقتباس أول خريج من الدفعة السعودية...</span>
-          <span class="lang-en inline">Your place for the first Saudi cohort graduate quote...</span>
-        </p>
-        <div style="display:flex;align-items:center;justify-content:center;gap:1rem;">
-          <div style="width:48px;height:48px;border-radius:50%;background:var(--navy-700);border:2px solid var(--gold);"></div>
-          <div style="text-align:left;">
-            <p style="color:var(--white);font-weight:700;margin:0;"><span class="lang-ar inline">اسم الخريج</span><span class="lang-en inline">Graduate Name</span></p>
-            <p style="color:var(--graytext);font-size:0.85rem;margin:0;"><span class="lang-ar inline">مدير هندسة، شركة رائدة</span><span class="lang-en inline">Engineering Manager, Leading Company</span></p>
-          </div>
-        </div>
-      </div>
+<!-- Timeline -->
+<section class="section" style="background:var(--bg-warm);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">مسارك الدراسي</div>
+      <h2>من القبول إلى التخرج</h2>
     </div>
-  </section>
+    <div class="timeline">
+      <div class="timeline-step"><div class="step-num">1</div><div class="step-title">استشارة مجانية</div><div class="step-desc">30 دقيقة</div></div>
+      <div class="timeline-step"><div class="step-num">2</div><div class="step-title">تقديم الطلب</div><div class="step-desc">أونلاين</div></div>
+      <div class="timeline-step"><div class="step-num">3</div><div class="step-title">القبول</div><div class="step-desc">2–3 أسابيع</div></div>
+      <div class="timeline-step"><div class="step-num">4</div><div class="step-title">الدراسة</div><div class="step-desc">~24 شهر</div></div>
+      <div class="timeline-step"><div class="step-num">5</div><div class="step-title">الختامي</div><div class="step-desc">مشروع سعودي</div></div>
+      <div class="timeline-step"><div class="step-num">6</div><div class="step-title">التخرج 🎓</div><div class="step-desc">GW degree</div></div>
+    </div>
+  </div>
+</section>
 
-  <!-- Dual CTA -->
-  <section class="section" style="background:rgba(201,162,39,0.02);">
-    <div class="section-container">
-      <div class="reveal text-center">
-        <h2 class="section-title" style="margin:0 auto 0.5rem;">
-          <span class="lang-ar inline">اختر مسارك</span>
-          <span class="lang-en inline">Choose Your Path</span>
-        </h2>
-        <p class="section-desc" style="margin:0 auto 2rem;">
-          <span class="lang-ar inline">سواء كنت مهندساً طموحاً أو شركة تبحث عن الاحتفاظ بأفضل كوادرها</span>
-          <span class="lang-en inline">Whether you're an ambitious engineer or a company looking to retain top talent</span>
-        </p>
+<!-- Vision 2030 -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">السياق السعودي</div>
+      <h2>رؤية 2030 تبحث عن قادة الهندسة</h2>
+      <p class="desc">مشاريع ضخمة بقيمة تريليونات الريالات تحتاج مهندسين يستطيعون القيادة — ليس فقط التنفيذ.</p>
+    </div>
+    <div class="feature-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="feature">
+        <div class="icon">🏗️</div>
+        <h3>نيوم</h3>
+        <p>500 مليار دولار. مدينة خطية. آلاف مديري المشاريع مطلوبون.</p>
       </div>
-      <div class="dual-cta">
-        <div class="dual-box reveal reveal-delay-1">
-          <h3><span class="lang-ar inline">المسار الفردي</span><span class="lang-en inline">Individual Track</span></h3>
-          <p><span class="lang-ar inline">أنت مهندس سعودي تسعى للترقي. نحن نرافقك من الاستشارة حتى التخرج — دعم بالعربي، قبول مبسط، ومتابعة شخصية.</span><span class="lang-en inline">You're a Saudi engineer seeking advancement. We guide you from consultation to graduation — Arabic support, streamlined admission, personal follow-up.</span></p>
-          <a href="consultation.html" class="btn btn-primary magnetic-btn"><span class="lang-ar inline">احجز استشارتك</span><span class="lang-en inline">Book Your Consultation</span></a>
-        </div>
-        <div class="dual-box reveal reveal-delay-2">
-          <h3><span class="lang-ar inline">المسار المؤسسي</span><span class="lang-en inline">Corporate Track</span></h3>
-          <p><span class="lang-ar inline">احتفظ بأفضل مهندسيك عن طريق جعلهم مديرين. رعاية الشركات، تقارير التقدم، وصفقات الدفعات.</span><span class="lang-en inline">Retain your best engineers by making them managers. Corporate sponsorship, progress reports, and cohort packages.</span></p>
-          <a href="employers.html" class="btn btn-secondary magnetic-btn"><span class="lang-ar inline">استكشف الشراكات</span><span class="lang-en inline">Explore Partnerships</span></a>
-        </div>
+      <div class="feature">
+        <div class="icon">🏨</div>
+        <h3>البحر الأحمر</h3>
+        <p>50 منتجع فاخر. بنية تحتية مستدامة. هندسة سياحية عالمية.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🏠</div>
+        <h3>روشن</h3>
+        <p>400 ألف وحدة سكنية. أكبر مشروع تطوير عمراني في التاريخ.</p>
       </div>
     </div>
-  </section>
+    <div style="text-align:center; margin-top:32px;">
+      <a href="employers.html" class="btn btn-outline">🏢 اكتشف الشركات الشريكة →</a>
+    </div>
+  </div>
+</section>
 
-  <!-- Lead Magnet -->
-  <section class="section" id="lead-magnet">
-    <div class="section-container">
-      <div class="lead-magnet">
-        <div class="reveal">
-          <p class="section-label"><span class="lang-ar inline">تقرير مجاني</span><span class="lang-en inline">Free Report</span></p>
-          <h2 class="section-title" style="margin-bottom:1rem;">
-            <span class="lang-ar inline">مؤشر القيادة الهندسية 2026</span>
-            <span class="lang-en inline">Saudi Engineering Leadership Index 2026</span>
-          </h2>
-          <p class="section-desc" style="margin-bottom:1.5rem;">
-            <span class="lang-ar inline">اكتشف الفجوة بين العرض والطلب لقادة الهندسة في المملكة، وأفضل الفرص للمهندسين السعوديين، وبيانات الرواتب والمشاريع الضخمة.</span>
-            <span class="lang-en inline">Discover the supply-demand gap for engineering leaders in the Kingdom, the best opportunities for Saudi engineers, and salary + megaproject data.</span>
-          </p>
-          <ul style="color:var(--graytext);font-size:0.95rem;margin-bottom:2rem;list-style:none;padding:0;">
-            <li style="margin-bottom:0.5rem;">✦ <span class="lang-ar inline">أفضل 50 شركة توظف قادة هندسة</span><span class="lang-en inline">Top 50 employers hiring engineering leaders</span></li>
-            <li style="margin-bottom:0.5rem;">✦ <span class="lang-ar inline">تحليل رواتب المهندسين حسب المنطقة والقطاع</span><span class="lang-en inline">Engineer salary analysis by region and sector</span></li>
-            <li style="margin-bottom:0.5rem;">✦ <span class="lang-ar inline">خط زمني لمشاريع رؤية 2030</span><span class="lang-en inline">Vision 2030 giga-project timeline</span></li>
-            <li>✦ <span class="lang-ar inline">مقارنة برامج الماجستير الهندسية</span><span class="lang-en inline">Engineering master's program comparison</span></li>
-          </ul>
-          <form style="display:flex;gap:0.75rem;flex-wrap:wrap;">
-            <input type="email" placeholder="email@example.com" required style="flex:1;min-width:220px;padding:0.85rem 1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:var(--white);font-family:inherit;">
-            <button type="submit" class="btn btn-primary">
-              <span class="lang-ar inline">حمّل التقرير</span>
-              <span class="lang-en inline">Download Report</span>
-            </button>
-          </form>
-        </div>
-        <div class="lead-magnet-visual reveal reveal-delay-2">
-          <div class="report-mockup">
-            <div style="font-size:2.5rem;margin-bottom:0.5rem;">📊</div>
-            <h4><span class="lang-ar inline">مؤشر القيادة الهندسية</span><span class="lang-en inline">Engineering Leadership Index</span></h4>
-            <p>2026 Edition | GW × JIC</p>
-          </div>
-        </div>
+<!-- Testimonials -->
+<section class="section" style="background:var(--bg-warm);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">آراء الخريجين</div>
+      <h2>ماذا يقول مهندسونا</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"البرنامج غيّر مساري المهني. تعلمت إدارة المشاريع من منظور استراتيجي، وليس فقط تقني. اليوم أقود فريقاً في مشروع ضخم."</p>
+        <div class="author"><div class="author-name">أحمد العتيبي</div><div class="author-role">مدير مشروع، شركة إنشاءات سعودية</div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"أهم ما في البرنامج هو المرونة. استمررت في عملي الكامل ودرست في المساء. دعم JIC بالعربي كان فارقًا كبيرًا."</p>
+        <div class="author"><div class="author-name">سارة القحطاني</div><div class="author-role">مهندسة أنظمة، قطاع التقنية</div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"شهادة GW فتحت لي أبوابًا لم تكن موجودة. التوظيف الدولي، المشاريع الكبرى، وفرص القيادة — كلها أصبحت ممكنة."</p>
+        <div class="author"><div class="author-name">خالد الزهراني</div><div class="author-role">مدير هندسة، NEOM</div></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h4>GW × JIC</h4>
-        <p><span class="lang-ar inline">مسار حصري لماجستير إدارة الهندسة من جامعة جورج واشنطن في المملكة العربية السعودية.</span><span class="lang-en inline">Exclusive pathway for the GW M.S. in Engineering Management in Saudi Arabia.</span></p>
-        <a href="https://wa.me/966500000000" class="footer-cta" target="_blank" rel="noopener">
-          <span>💬</span>
-          <span class="lang-ar inline">تواصل عبر واتساب</span>
-          <span class="lang-en inline">Chat on WhatsApp</span>
-        </a>
-      </div>
-      <div class="footer-col">
-        <h4><span class="lang-ar inline">البرنامج</span><span class="lang-en inline">Program</span></h4>
-        <a href="program.html"><span class="lang-ar inline">تفاصيل البرنامج</span><span class="lang-en inline">Program Details</span></a>
-        <a href="program.html#curriculum"><span class="lang-ar inline">المنهج الدراسي</span><span class="lang-en inline">Curriculum</span></a>
-        <a href="program.html#admissions"><span class="lang-ar inline">القبول والمتطلبات</span><span class="lang-en inline">Admissions</span></a>
-        <a href="program.html#faq"><span class="lang-ar inline">الأسئلة الشائعة</span><span class="lang-en inline">FAQ</span></a>
-      </div>
-      <div class="footer-col">
-        <h4><span class="lang-ar inline">للشركات</span><span class="lang-en inline">For Employers</span></h4>
-        <a href="employers.html"><span class="lang-ar inline">شبكة الشركات</span><span class="lang-en inline">Corporate Network</span></a>
-        <a href="employers.html#b2b"><span class="lang-ar inline">مزايا رعاية الشركات</span><span class="lang-en inline">B2B Benefits</span></a>
-        <a href="employers.html#inquiry"><span class="lang-ar inline">استفسار مؤسسي</span><span class="lang-en inline">Corporate Inquiry</span></a>
-      </div>
-      <div class="footer-col">
-        <h4><span class="lang-ar inline">النشرة البريدية</span><span class="lang-en inline">Newsletter</span></h4>
-        <p><span class="lang-ar inline">احصل على آخر الأخبار حول الدفعات والفعاليات والوظائف.</span><span class="lang-en inline">Get the latest on cohorts, events, and opportunities.</span></p>
-        <form style="display:flex;gap:0.5rem;margin-top:0.75rem;">
-          <input type="email" placeholder="Email" style="flex:1;padding:0.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:var(--white);font-family:inherit;font-size:0.85rem;">
-          <button type="submit" class="btn btn-primary" style="padding:0.6rem 1rem;font-size:0.85rem;">→</button>
-        </form>
-      </div>
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>جاهز للانتقال إلى القيادة؟</h2>
+    <p>استشارتك المجانية لمدة 30 دقيقة مع أحد مستشارينا. نناقش أهدافك، نراجع ملفك، ونحدد أفضل مسار لك.</p>
+    <a href="consultation.html" class="btn btn-accent">🗓️ احجز استشارتك الآن</a>
+    <div style="margin-top:24px; font-size:13px; color:rgba(255,255,255,0.6);">
+      لا التزام. لا رسوم خفية. مجرد محادثة مفيدة.
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 GW × JIC. <span class="lang-ar inline">جميع الحقوق محفوظة.</span><span class="lang-en inline">All rights reserved.</span></span>
-      <span style="display:flex;gap:1rem;">
-        <a href="#" aria-label="LinkedIn">in</a>
-        <a href="#" aria-label="Twitter">X</a>
-        <a href="#" aria-label="Instagram">ig</a>
-      </span>
-    </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="js/main.js"></script>
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>© 2026 كلية جدة الدولية — شريك جامعة جورج واشنطن في المملكة العربية السعودية</p>
+    <div class="links">
+      <a href="program.html">البرنامج</a>
+      <a href="employers.html">الشركات</a>
+      <a href="why-gw.html">لماذا GW</a>
+      <a href="consultation.html">استشارة</a>
+      <a href="index-en.html">English</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
