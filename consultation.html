@@ -5,14 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>احجز استشارتك المجانية | Book Free Consultation — GW × JIC</title>
   <meta name="description" content="احجز استشارتك المجانية لماجستير إدارة الهندسة من GW عبر JIC. واتساب، حجز موعد، أو نموذج تواصل. Book your free consultation for GW Engineering Management via JIC.">
+  <meta property="og:title" content="احجز استشارتك المجانية | Book Free Consultation — GW × JIC">
+  <meta property="og:description" content="استشارة مجانية لماجستير إدارة الهندسة من GW عبر JIC.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jic-gw-leads.netlify.app/consultation.html">
+  <meta property="og:image" content="https://jic-gw-leads.netlify.app/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="احجز استشارتك المجانية | Book Free Consultation — GW × JIC">
+  <meta name="twitter:description" content="استشارة مجانية لماجستير إدارة الهندسة من GW عبر JIC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav class="navbar">
+  <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي / Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="القائمة الرئيسية / Main navigation">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">GW <span>×</span> JIC</a>
+      <a href="index.html" class="nav-logo" aria-label="GW × JIC Home">GW <span>×</span> JIC</a>
       <ul class="nav-links">
         <li><a href="index.html"><span class="lang-ar inline">الرئيسية</span><span class="lang-en inline">Home</span></a></li>
         <li><a href="program.html"><span class="lang-ar inline">البرنامج</span><span class="lang-en inline">Program</span></a></li>
@@ -21,11 +33,11 @@
         <li><a href="consultation.html" class="active"><span class="lang-ar inline">استشارة</span><span class="lang-en inline">Consultation</span></a></li>
       </ul>
       <button class="lang-toggle" aria-label="Toggle language">EN</button>
-      <button class="mobile-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <div class="mobile-drawer">
+  <div class="mobile-drawer" role="dialog" aria-label="القائمة المتنقلة / Mobile menu" aria-hidden="true">
     <button class="close-btn" aria-label="Close menu">&times;</button>
     <a href="index.html"><span class="lang-ar inline">الرئيسية</span><span class="lang-en inline">Home</span></a>
     <a href="program.html"><span class="lang-ar inline">البرنامج</span><span class="lang-en inline">Program</span></a>
@@ -35,8 +47,8 @@
     <button class="lang-toggle" style="margin-top:1rem;">EN</button>
   </div>
 
-  <header class="page-header">
-    <div class="page-header-bg"></div>
+  <header class="page-header" role="banner">
+    <div class="page-header-bg parallax-bg"></div>
     <div class="page-header-content reveal">
       <p class="section-label"><span class="lang-ar inline">تحدث معنا</span><span class="lang-en inline">Talk to Us</span></p>
       <h1 class="section-title" style="font-size:clamp(2rem,4vw,3rem);">
@@ -50,11 +62,13 @@
     </div>
   </header>
 
+  <main id="main-content">
+
   <!-- Value Teaser -->
-  <section class="section">
+  <section class="section" aria-labelledby="value-heading">
     <div class="section-container">
       <div class="reveal text-center">
-        <h2 class="section-title" style="margin:0 auto 0.5rem;">
+        <h2 class="section-title" id="value-heading" style="margin:0 auto 0.5rem;">
           <span class="lang-ar inline">ماذا يحدث في الاستشارة؟</span>
           <span class="lang-en inline">What Happens in the Consultation?</span>
         </h2>
@@ -80,29 +94,29 @@
   </section>
 
   <!-- Contact Options -->
-  <section class="section" style="background:rgba(201,162,39,0.02);">
+  <section class="section" style="background:rgba(201,162,39,0.02);" aria-labelledby="contact-heading">
     <div class="section-container">
       <div class="reveal text-center">
-        <h2 class="section-title" style="margin:0 auto 2rem;">
+        <h2 class="section-title" id="contact-heading" style="margin:0 auto 2rem;">
           <span class="lang-ar inline">ثلاث طرق للتواصل</span>
           <span class="lang-en inline">Three Ways to Connect</span>
         </h2>
       </div>
       <div class="contact-grid">
         <div class="contact-card reveal reveal-delay-1">
-          <div class="contact-icon">💬</div>
+          <div class="contact-icon" aria-hidden="true">💬</div>
           <h3><span class="lang-ar inline">واتساب فوري</span><span class="lang-en inline">Instant WhatsApp</span></h3>
           <p><span class="lang-ar inline">رد سريع خلال ساعات العمل. أرسل سؤالك الآن.</span><span class="lang-en inline">Quick response during business hours. Send your question now.</span></p>
           <a href="https://wa.me/966500000000" class="btn btn-primary" target="_blank" rel="noopener" style="width:100%;"><span class="lang-ar inline">افتح واتساب</span><span class="lang-en inline">Open WhatsApp</span></a>
         </div>
         <div class="contact-card reveal reveal-delay-2">
-          <div class="contact-icon">📅</div>
+          <div class="contact-icon" aria-hidden="true">📅</div>
           <h3><span class="lang-ar inline">حجز موعد</span><span class="lang-en inline">Schedule a Call</span></h3>
           <p><span class="lang-ar inline">اختر الوقت المناسب لك من خلال Cal.com. مكالمة فيديو 30 دقيقة.</span><span class="lang-en inline">Pick a time that works for you via Cal.com. 30-minute video call.</span></p>
           <a href="https://cal.com/jic-gw" class="btn btn-secondary" target="_blank" rel="noopener" style="width:100%;"><span class="lang-ar inline">اختر الموعد</span><span class="lang-en inline">Pick a Time</span></a>
         </div>
         <div class="contact-card reveal reveal-delay-3">
-          <div class="contact-icon">✉️</div>
+          <div class="contact-icon" aria-hidden="true">✉️</div>
           <h3><span class="lang-ar inline">نموذج تواصل</span><span class="lang-en inline">Contact Form</span></h3>
           <p><span class="lang-ar inline">املأ النموذج أدناه وسنرد عليك خلال 24 ساعة.</span><span class="lang-en inline">Fill out the form below and we'll reply within 24 hours.</span></p>
           <a href="#form" class="btn btn-secondary" style="width:100%;"><span class="lang-ar inline">اذهب للنموذج</span><span class="lang-en inline">Go to Form</span></a>
@@ -112,11 +126,11 @@
   </section>
 
   <!-- Consultation Form -->
-  <section class="section" id="form">
+  <section class="section" id="form" aria-labelledby="form-heading">
     <div class="section-container">
       <div class="reveal" style="max-width:720px;margin:0 auto;">
         <p class="section-label"><span class="lang-ar inline">النموذج</span><span class="lang-en inline">The Form</span></p>
-        <h2 class="section-title">
+        <h2 class="section-title" id="form-heading">
           <span class="lang-ar inline">أخبرنا عنك</span>
           <span class="lang-en inline">Tell Us About Yourself</span>
         </h2>
@@ -125,29 +139,28 @@
           <span class="lang-en inline">All fields are bilingual. Fill in what applies and we'll reach out.</span>
         </p>
         <form class="glass-card" style="padding:2.5rem;">
-          <div class="form-group">
-            <label><span class="lang-ar inline">الاسم الكامل *</span><span class="lang-en inline">Full Name *</span></label>
-            <input type="text" required>
+          <div class="form-group form-floating">
+            <input type="text" id="full-name" required placeholder=" ">
+            <label for="full-name"><span class="lang-ar inline">الاسم الكامل *</span><span class="lang-en inline">Full Name *</span></label>
           </div>
-          <div class="form-group">
-            <label><span class="lang-ar inline">البريد الإلكتروني *</span><span class="lang-en inline">Email *</span></label>
-            <input type="email" required>
+          <div class="form-group form-floating">
+            <input type="email" id="email" required placeholder=" ">
+            <label for="email"><span class="lang-ar inline">البريد الإلكتروني *</span><span class="lang-en inline">Email *</span></label>
           </div>
-          <div class="form-group">
-            <label><span class="lang-ar inline">رقم الجوال *</span><span class="lang-en inline">Phone *</span></label>
-            <input type="tel" required placeholder="+966 5X XXX XXXX">
+          <div class="form-group form-floating">
+            <input type="tel" id="phone" required placeholder=" " value="+966 ">
+            <label for="phone"><span class="lang-ar inline">رقم الجوال *</span><span class="lang-en inline">Phone *</span></label>
           </div>
-          <div class="form-group">
-            <label><span class="lang-ar inline">الشركة</span><span class="lang-en inline">Company</span></label>
-            <input type="text">
+          <div class="form-group form-floating">
+            <input type="text" id="company" placeholder=" ">
+            <label for="company"><span class="lang-ar inline">الشركة</span><span class="lang-en inline">Company</span></label>
           </div>
-          <div class="form-group">
-            <label><span class="lang-ar inline">المسمى الوظيفي</span><span class="lang-en inline">Job Title</span></label>
-            <input type="text">
+          <div class="form-group form-floating">
+            <input type="text" id="job-title" placeholder=" ">
+            <label for="job-title"><span class="lang-ar inline">المسمى الوظيفي</span><span class="lang-en inline">Job Title</span></label>
           </div>
-          <div class="form-group">
-            <label><span class="lang-ar inline">المنطقة *</span><span class="lang-en inline">Region *</span></label>
-            <select required>
+          <div class="form-group form-floating">
+            <select id="region" required>
               <option value="">اختر المنطقة / Select Region</option>
               <option value="riyadh">الرياض / Riyadh</option>
               <option value="jeddah">جدة / Jeddah</option>
@@ -158,27 +171,28 @@
               <option value="jazan">جازان / Jazan</option>
               <option value="other">أخرى / Other</option>
             </select>
+            <label for="region"><span class="lang-ar inline">المنطقة *</span><span class="lang-en inline">Region *</span></label>
           </div>
-          <div class="form-group">
-            <label><span class="lang-ar inline">نوع الاهتمام *</span><span class="lang-en inline">Interest Type *</span></label>
-            <select required>
+          <div class="form-group form-floating">
+            <select id="interest-type" required>
               <option value="">اختر / Select</option>
               <option value="individual">فردي — أنا مهندس أرغب بالتقديم / Individual — I am an engineer applying</option>
               <option value="corporate">مؤسسي — أمثل شركة / Corporate — I represent a company</option>
               <option value="both">كلاهما / Both</option>
             </select>
+            <label for="interest-type"><span class="lang-ar inline">نوع الاهتمام *</span><span class="lang-en inline">Interest Type *</span></label>
           </div>
-          <div class="form-group">
-            <label><span class="lang-ar inline">اللغة المفضلة للتواصل</span><span class="lang-en inline">Preferred Communication Language</span></label>
-            <select>
+          <div class="form-group form-floating">
+            <select id="pref-lang">
               <option value="ar">العربية / Arabic</option>
               <option value="en">الإنجليزية / English</option>
-              <option value="both"><span class="lang-ar inline">كلاهما</span><span class="lang-en inline">Both</span></option>
+              <option value="both">كلاهما / Both</option>
             </select>
+            <label for="pref-lang"><span class="lang-ar inline">اللغة المفضلة للتواصل</span><span class="lang-en inline">Preferred Communication Language</span></label>
           </div>
-          <div class="form-group">
-            <label><span class="lang-ar inline">رسالتك</span><span class="lang-en inline">Your Message</span></label>
-            <textarea rows="4" placeholder="<span class='lang-ar inline'>أخبرنا بأهدافك وأسئلتك...</span><span class='lang-en inline'>Tell us your goals and questions...</span>"></textarea>
+          <div class="form-group form-floating">
+            <textarea id="message" rows="4" placeholder=" "></textarea>
+            <label for="message"><span class="lang-ar inline">رسالتك</span><span class="lang-en inline">Your Message</span></label>
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%;">
             <span class="lang-ar inline">إرسال الطلب</span>
@@ -190,10 +204,10 @@
   </section>
 
   <!-- What to Expect -->
-  <section class="section" style="background:rgba(201,162,39,0.02);">
+  <section class="section" style="background:rgba(201,162,39,0.02);" aria-labelledby="expect-heading">
     <div class="section-container">
       <div class="reveal text-center">
-        <h2 class="section-title" style="margin:0 auto 2rem;">
+        <h2 class="section-title" id="expect-heading" style="margin:0 auto 2rem;">
           <span class="lang-ar inline">ماذا يحدث بعد الاستشارة؟</span>
           <span class="lang-en inline">What Happens After the Consultation?</span>
         </h2>
@@ -224,18 +238,18 @@
   </section>
 
   <!-- Trust Signals + Urgency -->
-  <section class="section">
+  <section class="section" aria-label="Trust signals and urgency">
     <div class="section-container">
       <div class="reveal text-center">
         <div class="trust-badges" style="margin-bottom:2rem;">
-          <span class="trust-badge">✓ <span class="lang-ar inline">لا التزام</span><span class="lang-en inline">No Commitment</span></span>
-          <span class="trust-badge gold">✓ <span class="lang-ar inline">100% مجاني</span><span class="lang-en inline">100% Free</span></span>
-          <span class="trust-badge">✓ <span class="lang-ar inline">دعم بالعربية</span><span class="lang-en inline">Arabic Support</span></span>
-          <span class="trust-badge">✓ <span class="lang-ar inline">سرية تامة</span><span class="lang-en inline">Fully Confidential</span></span>
+          <span class="trust-badge">✓ <span class="lang-ar inline">لا التزام</span><span class="lang-en inline">No Commitment</span><span class="tooltip">استشارة مجانية بدون أي التزام مالي</span></span>
+          <span class="trust-badge gold">✓ <span class="lang-ar inline">100% مجاني</span><span class="lang-en inline">100% Free</span><span class="tooltip">لا توجد رسوم خفية على الإطلاق</span></span>
+          <span class="trust-badge">✓ <span class="lang-ar inline">دعم بالعربية</span><span class="lang-en inline">Arabic Support</span><span class="tooltip">فريق دعم ناطق بالعربية جاهز لمساعدتك</span></span>
+          <span class="trust-badge">✓ <span class="lang-ar inline">سرية تامة</span><span class="lang-en inline">Fully Confidential</span><span class="tooltip">معلوماتك محمية بموجب سياسة الخصوصية</span></span>
         </div>
         <div class="glass-card" style="padding:2rem;max-width:600px;margin:0 auto;display:inline-block;">
           <p style="color:var(--gold);font-weight:700;font-size:1.1rem;margin-bottom:0.5rem;">
-            <span class="lang-ar inline">⏳ الدفعة الأولى — أماكن محدودة</span>
+            <span class="scarcity-pulse">⏳ الدفعة الأولى — أماكن محدودة</span>
             <span class="lang-en inline">⏳ Cohort 1 — Limited Seats</span>
           </p>
           <p style="color:var(--graytext);font-size:0.95rem;">
@@ -247,7 +261,9 @@
     </div>
   </section>
 
-  <footer class="footer">
+  </main>
+
+  <footer class="footer" role="contentinfo">
     <div class="footer-grid">
       <div class="footer-col">
         <h4>GW × JIC</h4>
@@ -274,8 +290,8 @@
       <div class="footer-col">
         <h4><span class="lang-ar inline">النشرة البريدية</span><span class="lang-en inline">Newsletter</span></h4>
         <p><span class="lang-ar inline">احصل على آخر الأخبار حول الدفعات والفعاليات والوظائف.</span><span class="lang-en inline">Get the latest on cohorts, events, and opportunities.</span></p>
-        <form style="display:flex;gap:0.5rem;margin-top:0.75rem;">
-          <input type="email" placeholder="Email" style="flex:1;padding:0.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:var(--white);font-family:inherit;font-size:0.85rem;">
+        <form style="display:flex;gap:0.5rem;margin-top:0.75rem;" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Email" required style="flex:1;padding:0.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:var(--white);font-family:inherit;font-size:0.85rem;">
           <button type="submit" class="btn btn-primary" style="padding:0.6rem 1rem;font-size:0.85rem;">→</button>
         </form>
       </div>

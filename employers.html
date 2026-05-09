@@ -5,14 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>شبكة الشركات | Corporate Network — GW × JIC</title>
   <meta name="description" content="أفضل 50 شركة سعودية شريكة في برنامج ماجستير إدارة الهندسة. احتفظ بأفضل مهندسيك عبر رعاية الشركات. Top 50 Saudi employers partnered with GW Engineering Management.">
+  <meta property="og:title" content="شبكة الشركات | Corporate Network — GW × JIC">
+  <meta property="og:description" content="50 شركة سعودية شريكة — احتفظ بأفضل مهندسيك عبر رعاية الشركات.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jic-gw-leads.netlify.app/employers.html">
+  <meta property="og:image" content="https://jic-gw-leads.netlify.app/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="شبكة الشركات | Corporate Network — GW × JIC">
+  <meta name="twitter:description" content="50 شركة سعودية شريكة — احتفظ بأفضل مهندسيك عبر رعاية الشركات.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav class="navbar">
+  <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي / Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="القائمة الرئيسية / Main navigation">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">GW <span>×</span> JIC</a>
+      <a href="index.html" class="nav-logo" aria-label="GW × JIC Home">GW <span>×</span> JIC</a>
       <ul class="nav-links">
         <li><a href="index.html"><span class="lang-ar inline">الرئيسية</span><span class="lang-en inline">Home</span></a></li>
         <li><a href="program.html"><span class="lang-ar inline">البرنامج</span><span class="lang-en inline">Program</span></a></li>
@@ -21,11 +33,11 @@
         <li><a href="consultation.html"><span class="lang-ar inline">استشارة</span><span class="lang-en inline">Consultation</span></a></li>
       </ul>
       <button class="lang-toggle" aria-label="Toggle language">EN</button>
-      <button class="mobile-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <div class="mobile-drawer">
+  <div class="mobile-drawer" role="dialog" aria-label="القائمة المتنقلة / Mobile menu" aria-hidden="true">
     <button class="close-btn" aria-label="Close menu">&times;</button>
     <a href="index.html"><span class="lang-ar inline">الرئيسية</span><span class="lang-en inline">Home</span></a>
     <a href="program.html"><span class="lang-ar inline">البرنامج</span><span class="lang-en inline">Program</span></a>
@@ -35,8 +47,8 @@
     <button class="lang-toggle" style="margin-top:1rem;">EN</button>
   </div>
 
-  <header class="page-header">
-    <div class="page-header-bg"></div>
+  <header class="page-header" role="banner">
+    <div class="page-header-bg parallax-bg"></div>
     <div class="page-header-content reveal">
       <p class="section-label"><span class="lang-ar inline">الشركات</span><span class="lang-en inline">Employers</span></p>
       <h1 class="section-title" style="font-size:clamp(2rem,4vw,3rem);">
@@ -50,11 +62,13 @@
     </div>
   </header>
 
+  <main id="main-content">
+
   <!-- Value Prop for HR -->
-  <section class="section">
+  <section class="section" aria-labelledby="hr-heading">
     <div class="section-container">
       <div class="reveal text-center">
-        <h2 class="section-title" style="margin:0 auto 0.5rem;">
+        <h2 class="section-title" id="hr-heading" style="margin:0 auto 0.5rem;">
           <span class="lang-ar inline">احتفظ بأفضل مهندسيك</span>
           <span class="lang-en inline">Retain Your Best Engineers</span>
         </h2>
@@ -81,11 +95,11 @@
   </section>
 
   <!-- Employer Grid -->
-  <section class="section" style="background:rgba(201,162,39,0.02);" id="employers">
+  <section class="section" style="background:rgba(201,162,39,0.02);" id="employers" aria-labelledby="employers-heading">
     <div class="section-container">
       <div class="reveal">
         <p class="section-label"><span class="lang-ar inline">قائمة الشركات</span><span class="lang-en inline">Employer Directory</span></p>
-        <h2 class="section-title">
+        <h2 class="section-title" id="employers-heading">
           <span class="lang-ar inline">50 شركة بحاجة لقادة هندسة</span>
           <span class="lang-en inline">50 Companies Needing Engineering Leaders</span>
         </h2>
@@ -234,42 +248,42 @@
   </section>
 
   <!-- B2B Benefits -->
-  <section class="section" id="b2b">
+  <section class="section" id="b2b" aria-labelledby="b2b-heading">
     <div class="section-container">
       <div class="reveal">
         <p class="section-label"><span class="lang-ar inline">مزايا الشركات</span><span class="lang-en inline">Corporate Benefits</span></p>
-        <h2 class="section-title">
+        <h2 class="section-title" id="b2b-heading">
           <span class="lang-ar inline">لماذا تُرعى شركتك مهندسيها؟</span>
           <span class="lang-en inline">Why Should Your Company Sponsor?</span>
         </h2>
       </div>
       <div class="feature-grid">
-        <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card reveal reveal-delay-1 tilt-card">
           <div class="feature-icon">💰</div>
           <h3><span class="lang-ar inline">أرخص من الاستبدال</span><span class="lang-en inline">Cheaper Than Replacement</span></h3>
           <p><span class="lang-ar inline">تكلفة استبدال مهندس كبير تساوي ~18 راتباً سنوياً. الرعاية أقل تكلفة وأعلى عائد.</span><span class="lang-en inline">Replacing a senior engineer costs ~18 months of salary. Sponsorship is lower cost and higher return.</span></p>
         </div>
-        <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card reveal reveal-delay-2 tilt-card">
           <div class="feature-icon">⏱️</div>
           <h3><span class="lang-ar inline">لا توقف وظيفي</span><span class="lang-en inline">Zero Downtime</span></h3>
           <p><span class="lang-ar inline">الموظف يدرس بعد الدوام. لا يغادر المكتب ولا يتوقف عن الإنتاج.</span><span class="lang-en inline">Employee studies after hours. Never leaves the office or stops producing.</span></p>
         </div>
-        <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-card reveal reveal-delay-3 tilt-card">
           <div class="feature-icon">🤝</div>
           <h3><span class="lang-ar inline">شهادة GW = جودة</span><span class="lang-en inline">GW Credential = Quality Signal</span></h3>
           <p><span class="lang-ar inline">لشركاء المشاريع المشتركة الدولية، شهادة GW تعني معايير عالمية.</span><span class="lang-en inline">For international joint-venture partners, a GW degree signals world-class standards.</span></p>
         </div>
-        <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card reveal reveal-delay-1 tilt-card">
           <div class="feature-icon">🇸🇦</div>
           <h3><span class="lang-ar inline">ائتمان سعودة</span><span class="lang-en inline">Saudization Credit</span></h3>
           <p><span class="lang-ar inline">تطوير كوادر سعودية إلى قيادة — يلبي أهداف السعودة ويرفع نسب التوطين.</span><span class="lang-en inline">Upskilling Saudis into leadership — meets Saudization targets and raises localization ratios.</span></p>
         </div>
-        <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card reveal reveal-delay-2 tilt-card">
           <div class="feature-icon">📊</div>
           <h3><span class="lang-ar inline">تقارير شهرية</span><span class="lang-en inline">Monthly Reports</span></h3>
           <p><span class="lang-ar inline">JIC تقدم تقارير دورية عن تقدم الموظفين المُرعَين للشركة.</span><span class="lang-en inline">JIC provides periodic progress reports on sponsored employees to the company.</span></p>
         </div>
-        <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-card reveal reveal-delay-3 tilt-card">
           <div class="feature-icon">🎯</div>
           <h3><span class="lang-ar inline">مسار ترقية واضح</span><span class="lang-en inline">Clear Promotion Pathway</span></h3>
           <p><span class="lang-ar inline">الخريجون يُرشَّحون لأدوار إدارية خلال 6 أشهر من التخرج.</span><span class="lang-en inline">Graduates are placed in management-track roles within 6 months of graduation.</span></p>
@@ -279,11 +293,11 @@
   </section>
 
   <!-- MOU Overview -->
-  <section class="section" style="background:rgba(201,162,39,0.02);">
+  <section class="section" style="background:rgba(201,162,39,0.02);" aria-labelledby="mou-heading">
     <div class="section-container">
       <div class="reveal">
         <p class="section-label"><span class="lang-ar inline">الشراكة</span><span class="lang-en inline">Partnership</span></p>
-        <h2 class="section-title">
+        <h2 class="section-title" id="mou-heading">
           <span class="lang-ar inline">إطار مذكرة التفاهم</span>
           <span class="lang-en inline">MOU Framework</span>
         </h2>
@@ -320,11 +334,11 @@
   </section>
 
   <!-- Corporate Inquiry Form -->
-  <section class="section" id="inquiry">
+  <section class="section" id="inquiry" aria-labelledby="inquiry-heading">
     <div class="section-container">
       <div class="reveal" style="max-width:700px;margin:0 auto;">
         <p class="section-label"><span class="lang-ar inline">استفسار مؤسسي</span><span class="lang-en inline">Corporate Inquiry</span></p>
-        <h2 class="section-title">
+        <h2 class="section-title" id="inquiry-heading">
           <span class="lang-ar inline">هل تريد رعاية مهندسيك؟</span>
           <span class="lang-en inline">Want to Sponsor Your Engineers?</span>
         </h2>
@@ -333,25 +347,25 @@
           <span class="lang-en inline">Fill out the form and the JIC team will reach out within 24 hours.</span>
         </p>
         <form class="glass-card" style="padding:2.5rem;">
-          <div class="form-group">
-            <label><span class="lang-ar inline">اسم الشركة *</span><span class="lang-en inline">Company Name *</span></label>
-            <input type="text" required>
+          <div class="form-group form-floating">
+            <input type="text" id="company-name" required placeholder=" ">
+            <label for="company-name"><span class="lang-ar inline">اسم الشركة *</span><span class="lang-en inline">Company Name *</span></label>
           </div>
-          <div class="form-group">
-            <label><span class="lang-ar inline">مسؤول الموارد البشرية *</span><span class="lang-en inline">HR Contact *</span></label>
-            <input type="text" required>
+          <div class="form-group form-floating">
+            <input type="text" id="hr-contact" required placeholder=" ">
+            <label for="hr-contact"><span class="lang-ar inline">مسؤول الموارد البشرية *</span><span class="lang-en inline">HR Contact *</span></label>
           </div>
-          <div class="form-group">
-            <label><span class="lang-ar inline">البريد الإلكتروني *</span><span class="lang-en inline">Email *</span></label>
-            <input type="email" required>
+          <div class="form-group form-floating">
+            <input type="email" id="company-email" required placeholder=" ">
+            <label for="company-email"><span class="lang-ar inline">البريد الإلكتروني *</span><span class="lang-en inline">Email *</span></label>
           </div>
-          <div class="form-group">
-            <label><span class="lang-ar inline">عدد الموظفين المهتمين</span><span class="lang-en inline">Number of Interested Employees</span></label>
-            <input type="number" min="1">
+          <div class="form-group form-floating">
+            <input type="number" id="employee-count" min="1" placeholder=" ">
+            <label for="employee-count"><span class="lang-ar inline">عدد الموظفين المهتمين</span><span class="lang-en inline">Number of Interested Employees</span></label>
           </div>
-          <div class="form-group">
-            <label><span class="lang-ar inline">الرسالة</span><span class="lang-en inline">Message</span></label>
-            <textarea rows="4"></textarea>
+          <div class="form-group form-floating">
+            <textarea id="company-message" rows="4" placeholder=" "></textarea>
+            <label for="company-message"><span class="lang-ar inline">الرسالة</span><span class="lang-en inline">Message</span></label>
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%;">
             <span class="lang-ar inline">إرسال الاستفسار</span>
@@ -362,7 +376,9 @@
     </div>
   </section>
 
-  <footer class="footer">
+  </main>
+
+  <footer class="footer" role="contentinfo">
     <div class="footer-grid">
       <div class="footer-col">
         <h4>GW × JIC</h4>
@@ -389,8 +405,8 @@
       <div class="footer-col">
         <h4><span class="lang-ar inline">النشرة البريدية</span><span class="lang-en inline">Newsletter</span></h4>
         <p><span class="lang-ar inline">احصل على آخر الأخبار حول الدفعات والفعاليات والوظائف.</span><span class="lang-en inline">Get the latest on cohorts, events, and opportunities.</span></p>
-        <form style="display:flex;gap:0.5rem;margin-top:0.75rem;">
-          <input type="email" placeholder="Email" style="flex:1;padding:0.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:var(--white);font-family:inherit;font-size:0.85rem;">
+        <form style="display:flex;gap:0.5rem;margin-top:0.75rem;" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Email" required style="flex:1;padding:0.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:var(--white);font-family:inherit;font-size:0.85rem;">
           <button type="submit" class="btn btn-primary" style="padding:0.6rem 1rem;font-size:0.85rem;">→</button>
         </form>
       </div>

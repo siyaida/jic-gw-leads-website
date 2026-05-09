@@ -7,6 +7,14 @@
 <meta name="description" content="ABET-accredited M.S. in Engineering Management from George Washington University. Part-time, 100% online, exclusive Saudi pathway through Jeddah International College.">
 <meta property="og:title" content="M.S. Engineering Management — GW × JIC">
 <meta property="og:description" content="ABET-accredited, part-time, online — for working Saudi engineers">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jic-gw-leads.netlify.app/">
+<meta property="og:image" content="https://jic-gw-leads.netlify.app/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="M.S. Engineering Management — GW × JIC">
+<meta name="twitter:description" content="ABET-accredited, part-time, online — for working Saudi engineers">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
   :root {
     --primary: #1e3a5f;
@@ -31,6 +39,24 @@
   ::selection { background: var(--primary); color:#fff; }
   a { text-decoration:none; color: inherit; }
   .container { max-width:1100px; margin:0 auto; padding:0 24px; }
+
+  /* Skip link */
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0 0 10px 10px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-decoration: none;
+    z-index: 10000;
+    transition: top 0.3s;
+  }
+  .skip-link:focus { top: 0; }
 
   .lang-bar { background: var(--bg-warm); border-bottom: 1px solid var(--border); padding: 8px 0; font-size: 13px; }
   .lang-bar .container { display:flex; justify-content:space-between; align-items:center; }
@@ -75,6 +101,11 @@
   .urgency { background: linear-gradient(90deg, #fef3c7 0%, #fde68a 100%); border: 1px solid #fcd34d; border-radius: 12px; padding: 16px 24px; margin-top: 40px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap: 12px; }
   .urgency p { font-size: 14px; font-weight:600; color: #92400e; margin:0; }
   .urgency .badge { background: #fff; color: #92400e; font-size: 12px; font-weight:700; padding: 4px 12px; border-radius: 20px; }
+  .scarcity-pulse { animation: scarcityPulse 2.5s ease-in-out infinite; display: inline-block; }
+  @keyframes scarcityPulse {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.85; transform: scale(1.02); }
+  }
 
   .section { padding: 64px 0; }
   .section-header { text-align:center; max-width: 600px; margin: 0 auto 48px; }
@@ -142,6 +173,8 @@
 </head>
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <div class="lang-bar">
   <div class="container">
     <div>🌍 Language / اللغة</div>
@@ -152,13 +185,13 @@
   </div>
 </div>
 
-<header>
+<header role="banner">
   <div class="container">
-    <a href="index-en.html" class="logo">
+    <a href="index-en.html" class="logo" aria-label="GW × JIC Home">
       <div class="logo-mark">GW×JIC</div>
       <div class="logo-text">M.S. Engineering Management<span>George Washington University × Jeddah International College</span></div>
     </a>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <a href="index-en.html" class="active">Home</a>
       <a href="program.html">Program</a>
       <a href="employers.html">Employers</a>
@@ -168,7 +201,9 @@
   </div>
 </header>
 
-<section class="hero">
+<main id="main-content">
+
+<section class="hero" aria-label="Program introduction">
   <div class="container">
     <div class="hero-grid">
       <div>
@@ -198,20 +233,20 @@
       </div>
     </div>
     <div class="urgency">
-      <p>🔥 Cohort 1 — Limited Seats | Applications Now Open</p>
+      <p><span class="scarcity-pulse">🔥 Cohort 1 — Limited Seats</span> | Applications Now Open</p>
       <span class="badge">Now Enrolling</span>
     </div>
   </div>
 </section>
 
-<section class="section" style="background:var(--bg-warm);">
+<section class="section" style="background:var(--bg-warm);" aria-labelledby="jic-heading">
   <div class="container">
     <div class="section-header">
       <div class="section-label">Who We Are</div>
-      <h2>Jeddah International College — Your Gateway to GW</h2>
+      <h2 id="jic-heading">Jeddah International College — Your Gateway to GW</h2>
     </div>
     <div class="jic-card">
-      <div class="jic-logo">🏛️</div>
+      <div class="jic-logo" aria-hidden="true">🏛️</div>
       <div>
         <h3>George Washington University × Jeddah International College</h3>
         <p>Jeddah International College (JIC) is a leading Saudi educational institution delivering internationally recognized academic programs. Through our partnership with George Washington University (GW) — one of America's premier research universities — we offer Saudi engineers a unique opportunity to earn an American master's degree without leaving their careers.</p>
@@ -226,41 +261,41 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" aria-labelledby="features-heading">
   <div class="container">
     <div class="section-header">
       <div class="section-label">Why This Program</div>
-      <h2>Built for the Working Saudi Engineer</h2>
+      <h2 id="features-heading">Built for the Working Saudi Engineer</h2>
       <p class="desc">No career break. No travel. No full-time commitment. Just progress — professionally and academically.</p>
     </div>
     <div class="feature-grid">
       <div class="feature">
-        <div class="icon">💻</div>
+        <div class="icon" aria-hidden="true">💻</div>
         <h3>100% Online</h3>
         <p>Asynchronous study from any Saudi city. Recorded lectures. Flexible assignments. No mandatory attendance.</p>
       </div>
       <div class="feature">
-        <div class="icon">⏱️</div>
+        <div class="icon" aria-hidden="true">⏱️</div>
         <h3>Part-Time</h3>
         <p>Just 6–9 study hours per week. Keep working while you advance. Balance is possible.</p>
       </div>
       <div class="feature">
-        <div class="icon">🏅</div>
+        <div class="icon" aria-hidden="true">🏅</div>
         <h3>ABET Accredited</h3>
         <p>Same accreditation as KFUPM. Recognized by the Saudi Council of Engineers and Ministry of Education.</p>
       </div>
       <div class="feature">
-        <div class="icon">🗣️</div>
+        <div class="icon" aria-hidden="true">🗣️</div>
         <h3>Arabic Support</h3>
         <p>JIC provides Arabic advising, academic coaching, local study groups, and 24/7 technical support.</p>
       </div>
       <div class="feature">
-        <div class="icon">🌐</div>
+        <div class="icon" aria-hidden="true">🌐</div>
         <h3>GW Global Network</h3>
         <p>R1 research university in the heart of D.C. Alumni network at NASA, the Pentagon, and Fortune 500 companies.</p>
       </div>
       <div class="feature">
-        <div class="icon">🇸🇦</div>
+        <div class="icon" aria-hidden="true">🇸🇦</div>
         <h3>Saudi Capstone</h3>
         <p>Capstone project tailored to engineering management challenges in Saudi megaprojects. Not theoretical — practical.</p>
       </div>
@@ -268,11 +303,11 @@
   </div>
 </section>
 
-<section class="section" style="background:var(--bg-warm);">
+<section class="section" style="background:var(--bg-warm);" aria-labelledby="timeline-heading">
   <div class="container">
     <div class="section-header">
       <div class="section-label">Your Journey</div>
-      <h2>From Application to Graduation</h2>
+      <h2 id="timeline-heading">From Application to Graduation</h2>
     </div>
     <div class="timeline">
       <div class="timeline-step"><div class="step-num">1</div><div class="step-title">Free Consultation</div><div class="step-desc">30 minutes</div></div>
@@ -285,26 +320,26 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" aria-labelledby="vision-heading">
   <div class="container">
     <div class="section-header">
       <div class="section-label">Saudi Context</div>
-      <h2>Vision 2030 Needs Engineering Leaders</h2>
+      <h2 id="vision-heading">Vision 2030 Needs Engineering Leaders</h2>
       <p class="desc">Trillion-riyal giga-projects need engineers who can lead — not just execute.</p>
     </div>
     <div class="feature-grid" style="grid-template-columns: repeat(3, 1fr);">
       <div class="feature">
-        <div class="icon">🏗️</div>
+        <div class="icon" aria-hidden="true">🏗️</div>
         <h3>NEOM</h3>
         <p>$500 billion. Linear city. Thousands of project managers needed.</p>
       </div>
       <div class="feature">
-        <div class="icon">🏨</div>
+        <div class="icon" aria-hidden="true">🏨</div>
         <h3>Red Sea Global</h3>
         <p>50 luxury resorts. Sustainable infrastructure. World-class tourism engineering.</p>
       </div>
       <div class="feature">
-        <div class="icon">🏠</div>
+        <div class="icon" aria-hidden="true">🏠</div>
         <h3>Roshn</h3>
         <p>400,000 housing units. The largest urban development project in history.</p>
       </div>
@@ -315,25 +350,25 @@
   </div>
 </section>
 
-<section class="section" style="background:var(--bg-warm);">
+<section class="section" style="background:var(--bg-warm);" aria-labelledby="testi-heading">
   <div class="container">
     <div class="section-header">
       <div class="section-label">Student Voices</div>
-      <h2>What Our Engineers Say</h2>
+      <h2 id="testi-heading">What Our Engineers Say</h2>
     </div>
     <div class="testi-grid">
       <div class="testi">
-        <div class="stars">★★★★★</div>
+        <div class="stars" aria-hidden="true">★★★★★</div>
         <p>"This program changed my career trajectory. I learned project management from a strategic, not just technical, perspective. Today I lead a team on a major project."</p>
         <div class="author"><div class="author-name">Ahmad Al-Otaibi</div><div class="author-role">Project Manager, Saudi Construction Co.</div></div>
       </div>
       <div class="testi">
-        <div class="stars">★★★★★</div>
+        <div class="stars" aria-hidden="true">★★★★★</div>
         <p>"The best part is the flexibility. I kept my full-time job and studied in the evenings. JIC's Arabic support was a game-changer."</p>
         <div class="author"><div class="author-name">Sarah Al-Qahtani</div><div class="author-role">Systems Engineer, Technology Sector</div></div>
       </div>
       <div class="testi">
-        <div class="stars">★★★★★</div>
+        <div class="stars" aria-hidden="true">★★★★★</div>
         <p>"The GW degree opened doors that didn't exist before. International recruitment, major projects, leadership opportunities — all became possible."</p>
         <div class="author"><div class="author-name">Khalid Al-Zahrani</div><div class="author-role">Engineering Director, NEOM</div></div>
       </div>
@@ -341,7 +376,7 @@
   </div>
 </section>
 
-<section class="cta-section">
+<section class="cta-section" aria-label="Call to action">
   <div class="container">
     <h2>Ready to Step Into Leadership?</h2>
     <p>Your free 30-minute consultation with one of our advisors. We discuss your goals, review your profile, and map the best path forward.</p>
@@ -350,7 +385,9 @@
   </div>
 </section>
 
-<footer>
+</main>
+
+<footer role="contentinfo">
   <div class="container">
     <p>© 2026 Jeddah International College — George Washington University Partner in Saudi Arabia</p>
     <div class="links">

@@ -5,14 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>لماذا جورج واشنطن؟ | Why GW? — GW × JIC</title>
   <meta name="description" content="لماذا تختار جامعة جورج واشنطن لماجستير إدارة الهندسة؟ مقارنة تنافسية، اعتراف سعودي، وردود على جميع التحفظات. Why choose GW for Engineering Management?">
+  <meta property="og:title" content="لماذا جورج واشنطن؟ | Why GW? — GW × JIC">
+  <meta property="og:description" content="مقارنة تنافسية، اعتراف سعودي، وردود على جميع التحفظات.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jic-gw-leads.netlify.app/why-gw.html">
+  <meta property="og:image" content="https://jic-gw-leads.netlify.app/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="لماذا جورج واشنطن؟ | Why GW? — GW × JIC">
+  <meta name="twitter:description" content="مقارنة تنافسية، اعتراف سعودي، وردود على جميع التحفظات.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav class="navbar">
+  <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي / Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="القائمة الرئيسية / Main navigation">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">GW <span>×</span> JIC</a>
+      <a href="index.html" class="nav-logo" aria-label="GW × JIC Home">GW <span>×</span> JIC</a>
       <ul class="nav-links">
         <li><a href="index.html"><span class="lang-ar inline">الرئيسية</span><span class="lang-en inline">Home</span></a></li>
         <li><a href="program.html"><span class="lang-ar inline">البرنامج</span><span class="lang-en inline">Program</span></a></li>
@@ -21,11 +33,11 @@
         <li><a href="consultation.html"><span class="lang-ar inline">استشارة</span><span class="lang-en inline">Consultation</span></a></li>
       </ul>
       <button class="lang-toggle" aria-label="Toggle language">EN</button>
-      <button class="mobile-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <div class="mobile-drawer">
+  <div class="mobile-drawer" role="dialog" aria-label="القائمة المتنقلة / Mobile menu" aria-hidden="true">
     <button class="close-btn" aria-label="Close menu">&times;</button>
     <a href="index.html"><span class="lang-ar inline">الرئيسية</span><span class="lang-en inline">Home</span></a>
     <a href="program.html"><span class="lang-ar inline">البرنامج</span><span class="lang-en inline">Program</span></a>
@@ -35,8 +47,8 @@
     <button class="lang-toggle" style="margin-top:1rem;">EN</button>
   </div>
 
-  <header class="page-header">
-    <div class="page-header-bg"></div>
+  <header class="page-header" role="banner">
+    <div class="page-header-bg parallax-bg"></div>
     <div class="page-header-content reveal">
       <p class="section-label"><span class="lang-ar inline">الجودة</span><span class="lang-en inline">Quality</span></p>
       <h1 class="section-title" style="font-size:clamp(2rem,4vw,3rem);">
@@ -50,33 +62,35 @@
     </div>
   </header>
 
+  <main id="main-content">
+
   <!-- GW Credentials -->
-  <section class="section" id="credentials">
+  <section class="section" id="credentials" aria-labelledby="credentials-heading">
     <div class="section-container">
       <div class="reveal">
         <p class="section-label"><span class="lang-ar inline">الاعتمادات</span><span class="lang-en inline">Credentials</span></p>
-        <h2 class="section-title">
+        <h2 class="section-title" id="credentials-heading">
           <span class="lang-ar inline">وزن الشهادة يبدأ من الجامعة</span>
           <span class="lang-en inline">The Credential's Weight Starts with the University</span>
         </h2>
       </div>
       <div class="feature-grid">
-        <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card reveal reveal-delay-1 tilt-card">
           <div class="feature-icon">🏛️</div>
           <h3><span class="lang-ar inline">200+ عام من التميز</span><span class="lang-en inline">200+ Years of Excellence</span></h3>
           <p><span class="lang-ar inline">جامعة جورج واشنطن مؤسسة عريقة تأسست عام 1821 — واحدة من أقدم وأعرق الجامعات الأمريكية.</span><span class="lang-en inline">George Washington University was founded in 1821 — one of the oldest and most prestigious U.S. institutions.</span></p>
         </div>
-        <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card reveal reveal-delay-2 tilt-card">
           <div class="feature-icon">🔬</div>
           <h3><span class="lang-ar inline">R1 — أعلى تصنيف بحثي</span><span class="lang-en inline">R1 — Highest Research Classification</span></h3>
           <p><span class="lang-ar inline">تصنيف كارنيجي R1 يعني "نشاط بحثي عالٍ جداً" — نفس فئة MIT وستانفورد وجامعات البحث العليا.</span><span class="lang-en inline">Carnegie R1 means "Very High Research Activity" — same tier as MIT, Stanford, and top research universities.</span></p>
         </div>
-        <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-card reveal reveal-delay-3 tilt-card">
           <div class="feature-icon">🏅</div>
           <h3><span class="lang-ar inline">ABET معتمد</span><span class="lang-en inline">ABET Accredited</span></h3>
           <p><span class="lang-ar inline">كلية الهندسة والعلوم التطبيقية في GW معتمدة من ABET — الهيئة نفسها التي تعتمد KFUPM — وهذا الاعتماد معترف به من الهيئة السعودية للمهندسين.</span><span class="lang-en inline">GW SEAS is ABET-accredited — the same body that accredits KFUPM — and this accreditation is recognized by the Saudi Council of Engineers.</span></p>
         </div>
-        <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card reveal reveal-delay-1 tilt-card">
           <div class="feature-icon">🌎</div>
           <h3><span class="lang-ar inline">واشنطن العاصمة</span><span class="lang-en inline">Washington D.C.</span></h3>
           <p><span class="lang-ar inline">قلب السياسة الأمريكية والعقود الفيدرالية — حيث تُبرم الصفقات السعودية الكبرى. موقع GW ليس مجرد عنوان؛ هو بوابة لشبكة لا تُضاهى.</span><span class="lang-en inline">The heart of U.S. policy and federal contracting — where Saudi mega-deals are made. GW's location is not just an address; it's a gateway to an unmatched network.</span></p>
@@ -86,11 +100,11 @@
   </section>
 
   <!-- Competitive Comparison -->
-  <section class="section" style="background:rgba(201,162,39,0.02);">
+  <section class="section" style="background:rgba(201,162,39,0.02);" aria-labelledby="comparison-heading">
     <div class="section-container">
       <div class="reveal">
         <p class="section-label"><span class="lang-ar inline">المقارنة</span><span class="lang-en inline">Comparison</span></p>
-        <h2 class="section-title">
+        <h2 class="section-title" id="comparison-heading">
           <span class="lang-ar inline">GW مقابل البدائل</span>
           <span class="lang-en inline">GW vs. The Alternatives</span>
         </h2>
@@ -163,11 +177,11 @@
   </section>
 
   <!-- Objection Playbook -->
-  <section class="section" id="objections">
+  <section class="section" id="objections" aria-labelledby="objections-heading">
     <div class="section-container">
       <div class="reveal">
         <p class="section-label"><span class="lang-ar inline">ردود مُحضَّرة</span><span class="lang-en inline">Prepared Responses</span></p>
-        <h2 class="section-title">
+        <h2 class="section-title" id="objections-heading">
           <span class="lang-ar inline">كل تحفظ له جواب</span>
           <span class="lang-en inline">Every Objection Has an Answer</span>
         </h2>
@@ -252,27 +266,27 @@
   </section>
 
   <!-- Recognition & Attestation -->
-  <section class="section" style="background:rgba(201,162,39,0.02);">
+  <section class="section" style="background:rgba(201,162,39,0.02);" aria-labelledby="recognition-heading">
     <div class="section-container">
       <div class="reveal">
         <p class="section-label"><span class="lang-ar inline">الاعتراف</span><span class="lang-en inline">Recognition</span></p>
-        <h2 class="section-title">
+        <h2 class="section-title" id="recognition-heading">
           <span class="lang-ar inline">التوثيق والمعادلة في السعودية</span>
           <span class="lang-en inline">Attestation & Equivalency in Saudi Arabia</span>
         </h2>
       </div>
       <div class="feature-grid">
-        <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card reveal reveal-delay-1 tilt-card">
           <div class="feature-icon">📜</div>
           <h3><span class="lang-ar inline">البعثة الثقافية السعودية (SACM)</span><span class="lang-en inline">Saudi Cultural Mission (SACM)</span></h3>
           <p><span class="lang-ar inline">الشهادة تُوثَّق عبر البعثة الثقافية في واشنطن. التوثيق يثبت المؤسسة لا طريقة التدريس. JIC ترافقك في كل خطوة.</span><span class="lang-en inline">The degree is attested through the Cultural Mission in Washington D.C. Attestation validates the institution, not delivery mode. JIC accompanies you through every step.</span></p>
         </div>
-        <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card reveal reveal-delay-2 tilt-card">
           <div class="feature-icon">🏛️</div>
           <h3><span class="lang-ar inline">وزارة التعليم (MoE)</span><span class="lang-en inline">Ministry of Education (MoE)</span></h3>
           <p><span class="lang-ar inline">GW مؤسسة أمريكية معتمدة إقليمياً (MSCHE) — المعيار المطلوب للمعادلة. JIC توفر دليل توثيق خطوة بخطوة.</span><span class="lang-en inline">GW is a regionally accredited U.S. institution (MSCHE) — the standard required for equivalency. JIC provides a step-by-step attestation guide.</span></p>
         </div>
-        <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-card reveal reveal-delay-3 tilt-card">
           <div class="feature-icon">⚙️</div>
           <h3><span class="lang-ar inline">الهيئة السعودية للمهندسين (SCE)</span><span class="lang-en inline">Saudi Council of Engineers (SCE)</span></h3>
           <p><span class="lang-ar inline">كلية GW للهندسة معتمدة من ABET — وهذا الاعتماد معترف به من SCE للترقية إلى درجات المهندس المحترف.</span><span class="lang-en inline">GW SEAS is ABET-accredited — and this accreditation is recognized by SCE for promotion to Professional Engineer grades.</span></p>
@@ -282,11 +296,11 @@
   </section>
 
   <!-- Alumni Network -->
-  <section class="section">
+  <section class="section" aria-labelledby="alumni-heading">
     <div class="section-container">
       <div class="reveal text-center">
         <p class="section-label"><span class="lang-ar inline">الخريجون</span><span class="lang-en inline">Alumni</span></p>
-        <h2 class="section-title" style="margin:0 auto 0.5rem;">
+        <h2 class="section-title" id="alumni-heading" style="margin:0 auto 0.5rem;">
           <span class="lang-ar inline">شبكة الخريجين السعوديين</span>
           <span class="lang-en inline">Saudi Alumni Network</span>
         </h2>
@@ -296,7 +310,7 @@
         </p>
       </div>
       <div class="glass-card reveal reveal-delay-1" style="padding:3rem;max-width:700px;margin:0 auto;text-align:center;">
-        <div style="font-size:3rem;margin-bottom:1rem;">🎓</div>
+        <div style="font-size:3rem;margin-bottom:1rem;" aria-hidden="true">🎓</div>
         <h3 style="color:var(--white);margin-bottom:0.5rem;"><span class="lang-ar inline">الدفعة الأولى قادمة</span><span class="lang-en inline">Cohort 1 Coming Soon</span></h3>
         <p style="color:var(--graytext);"><span class="lang-ar inline">كن من أوائل الخريجين السعوديين. سجّل الآن وابدأ رحلتك.</span><span class="lang-en inline">Be among the first Saudi graduates. Register now and start your journey.</span></p>
         <a href="consultation.html" class="btn btn-primary magnetic-btn" style="margin-top:1.5rem;"><span class="lang-ar inline">احجز استشارتك</span><span class="lang-en inline">Book Consultation</span></a>
@@ -305,11 +319,11 @@
   </section>
 
   <!-- Additional FAQ -->
-  <section class="section" style="background:rgba(201,162,39,0.02);" id="faq">
+  <section class="section" style="background:rgba(201,162,39,0.02);" id="faq" aria-labelledby="faq-heading">
     <div class="section-container">
       <div class="reveal">
         <p class="section-label"><span class="lang-ar inline">أسئلة إضافية</span><span class="lang-en inline">More Questions</span></p>
-        <h2 class="section-title">
+        <h2 class="section-title" id="faq-heading">
           <span class="lang-ar inline">ما تبقى يدور في بالك</span>
           <span class="lang-en inline">What Else Is on Your Mind</span>
         </h2>
@@ -319,7 +333,7 @@
           <button class="accordion-header">
             <span class="lang-ar inline">الدراسة عن بُعد تفتقر إلى "البرستيج"؟</span>
             <span class="lang-en inline">Online degrees lack prestige?</span>
-            <span class="accordion-icon">+</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
           </button>
           <div class="accordion-body">
             <span class="lang-ar inline">GW تنظم حفل تخرج اختياري في واشنطن يُشجَّع الطلاب السعوديين على حضوره. JIC تنظم احتفال تخرج في المملكة لكل دفعة — بحضور العائلات وتغطية إعلامية وتواصل مع الشركات. الشهادة مطابقة للبرنامج الحضوري.</span>
@@ -330,7 +344,7 @@
           <button class="accordion-header">
             <span class="lang-ar inline">أحتاج واسطة للترقية، لا شهادة؟</span>
             <span class="lang-en inline">I need wasta to get promoted?</span>
-            <span class="accordion-icon">+</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
           </button>
           <div class="accordion-body">
             <span class="lang-ar inline">الواسطة تحضرك للمقابلة؛ الكفاءة تبقيك في الوظيفة. شركات الصندوق (نيوم، البحر الأحمر، روشن) لديها أنظمة ترقية صريحة قائمة على الجدارة. الماجستير يعطيك لغة القيادة التقنية الحديثة. الواسطة قد تتغير — لكن شهادتك دائمة.</span>
@@ -341,7 +355,7 @@
           <button class="accordion-header">
             <span class="lang-ar inline">التزامات العائلة تجعل الدراسة مستحيلة؟</span>
             <span class="lang-en inline">Family obligations make studying impossible?</span>
-            <span class="accordion-icon">+</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
           </button>
           <div class="accordion-body">
             <span class="lang-ar inline">النموذج غير المتزامن يعني أنك لا تختار بين عشاء العائلة ومحاضرة حية. تدرس عندما يكون البيت هادئاً. JIC توفر نموذج "رسالة التزام العائلة" يشرح البرنامج. للمهندسات، JIC توفر شبكة توجيه من سعوديات أكملن البرنامج.</span>
@@ -352,7 +366,7 @@
           <button class="accordion-header">
             <span class="lang-ar inline">الشركات السعودية تفضل KAU أو KFUPM؟</span>
             <span class="lang-en inline">Employers prefer KAU or KFUPM?</span>
-            <span class="accordion-icon">+</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
           </button>
           <div class="accordion-body">
             <span class="lang-ar inline">KFUPM ممتازة لكن لا يوجد لديها ماجستير في إدارة الهندسة. GW تقدم ما لا تقدمه KFUPM — تقاطع الهندسة وإدارة الأعمال. للمهندسين العاملين، ترك الوظيفة سنتين للدراسة الحضورية اقتصادياً مستحيل. ماجستير GW EM مع بكالوريوس KFUPM مزيج قوي.</span>
@@ -363,7 +377,7 @@
           <button class="accordion-header">
             <span class="lang-ar inline">وش لو أبغى أسوي دكتوراه بعدين؟</span>
             <span class="lang-en inline">What if I want a PhD later?</span>
-            <span class="accordion-icon">+</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
           </button>
           <div class="accordion-body">
             <span class="lang-ar inline">لجان قبول الدكتوراه تقيم المؤسسة والاعتماد وقدرة البرنامج البحثية — لا طريقة التدريس. GW هي جامعة بحثية R1 مع برامج دكتوراه في إدارة الهندسة. مشروعك الختامي يمكن تصميمه كبحث أولي لمقترح دكتوراه. JIC يمكنها ربط الطلاب الجاهزين بمشرفي دكتوراه في GW.</span>
@@ -374,7 +388,9 @@
     </div>
   </section>
 
-  <footer class="footer">
+  </main>
+
+  <footer class="footer" role="contentinfo">
     <div class="footer-grid">
       <div class="footer-col">
         <h4>GW × JIC</h4>
@@ -401,8 +417,8 @@
       <div class="footer-col">
         <h4><span class="lang-ar inline">النشرة البريدية</span><span class="lang-en inline">Newsletter</span></h4>
         <p><span class="lang-ar inline">احصل على آخر الأخبار حول الدفعات والفعاليات والوظائف.</span><span class="lang-en inline">Get the latest on cohorts, events, and opportunities.</span></p>
-        <form style="display:flex;gap:0.5rem;margin-top:0.75rem;">
-          <input type="email" placeholder="Email" style="flex:1;padding:0.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:var(--white);font-family:inherit;font-size:0.85rem;">
+        <form style="display:flex;gap:0.5rem;margin-top:0.75rem;" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Email" required style="flex:1;padding:0.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:var(--white);font-family:inherit;font-size:0.85rem;">
           <button type="submit" class="btn btn-primary" style="padding:0.6rem 1rem;font-size:0.85rem;">→</button>
         </form>
       </div>

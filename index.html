@@ -7,6 +7,14 @@
 <meta name="description" content="برنامج ماجستير إدارة الهندسة من جامعة جورج واشنطن، معتمد ABET، دوام جزئي عن بُعد، عبر مسار حصري بكلية جدة الدولية">
 <meta property="og:title" content="ماجستير إدارة الهندسة — GW × JIC">
 <meta property="og:description" content="برنامج معتمد، دوام جزئي، عن بُعد — للمهندسين السعوديين">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jic-gw-leads.netlify.app/">
+<meta property="og:image" content="https://jic-gw-leads.netlify.app/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ماجستير إدارة الهندسة — GW × JIC">
+<meta name="twitter:description" content="برنامج معتمد، دوام جزئي، عن بُعد — للمهندسين السعوديين">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
   :root {
     --primary: #1e3a5f;
@@ -34,6 +42,24 @@
   a { text-decoration:none; color: inherit; }
   .container { max-width:1100px; margin:0 auto; padding:0 24px; }
 
+  /* Skip link */
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0 0 10px 10px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-decoration: none;
+    z-index: 10000;
+    transition: top 0.3s;
+  }
+  .skip-link:focus { top: 0; }
+
   /* Lang Switcher */
   .lang-bar {
     background: var(--bg-warm); border-bottom: 1px solid var(--border);
@@ -58,7 +84,7 @@
   .nav-cta:hover { background: var(--primary-light) !important; }
 
   /* Hero */
-  .hero { padding: 80px 0 60px; background: linear-gradient(180deg, var(--bg-warm) 0%, var(--bg) 100%); }
+  .hero { padding: 80px 0 60px; background: linear-gradient(180deg, var(--bg-warm) 0%, var(--bg) 100%); position: relative; overflow: hidden; }
   .hero-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items:center; }
   .hero h1 { font-size: clamp(28px, 3.5vw, 44px); font-weight:800; line-height:1.2; letter-spacing:-0.02em; }
   .hero h1 .highlight { color: var(--primary-light); }
@@ -88,9 +114,14 @@
   .hero-actions { display:flex; gap: 12px; margin-top: 28px; flex-wrap:wrap; }
 
   /* Urgency Bar */
-  .urgency { background: linear-gradient(90deg, #fef3c7 0%, #fde68a 100%); border: 1px solid #fcd34d; border-radius: 12px; padding: 16px 24px; margin-top: 40px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap: 12px; }
+  .urgency { background: linear-gradient(90deg, #fef3c7 0%, #fde68a 100%); border: 1px solid #fcd34d; border-radius: 12px; padding: 16px 24px; margin-top: 40px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap: 12px; position: relative; }
   .urgency p { font-size: 14px; font-weight:600; color: #92400e; margin:0; }
   .urgency .badge { background: #fff; color: #92400e; font-size: 12px; font-weight:700; padding: 4px 12px; border-radius: 20px; }
+  .scarcity-pulse { animation: scarcityPulse 2.5s ease-in-out infinite; display: inline-block; }
+  @keyframes scarcityPulse {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.85; transform: scale(1.02); }
+  }
 
   /* Sections */
   .section { padding: 64px 0; }
@@ -190,6 +221,8 @@
 </head>
 <body>
 
+<a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
+
 <!-- Language Bar -->
 <div class="lang-bar">
   <div class="container">
@@ -202,13 +235,13 @@
 </div>
 
 <!-- Header -->
-<header>
+<header role="banner">
   <div class="container">
-    <a href="index.html" class="logo">
+    <a href="index.html" class="logo" aria-label="GW × JIC الرئيسية">
       <div class="logo-mark">GW×JIC</div>
       <div class="logo-text">ماجستير إدارة الهندسة<span>جامعة جورج واشنطن × كلية جدة الدولية</span></div>
     </a>
-    <nav>
+    <nav role="navigation" aria-label="القائمة الرئيسية">
       <a href="index.html" class="active">الرئيسية</a>
       <a href="program.html">البرنامج</a>
       <a href="employers.html">الشركات</a>
@@ -218,8 +251,10 @@
   </div>
 </header>
 
+<main id="main-content">
+
 <!-- Hero -->
-<section class="hero">
+<section class="hero" aria-label="مقدمة البرنامج">
   <div class="container">
     <div class="hero-grid">
       <div>
@@ -258,21 +293,21 @@
     </div>
 
     <div class="urgency">
-      <p>🔥 الدفعة الأولى — أماكن محدودة | القبول مفتوح الآن</p>
+      <p><span class="scarcity-pulse">🔥 الدفعة الأولى — أماكن محدودة</span> | القبول مفتوح الآن</p>
       <span class="badge">Cohort 1 — Now Open</span>
     </div>
   </div>
 </section>
 
 <!-- Who is JIC -->
-<section class="section" style="background:var(--bg-warm);">
+<section class="section" style="background:var(--bg-warm);" aria-labelledby="jic-heading">
   <div class="container">
     <div class="section-header">
       <div class="section-label">من نحن</div>
-      <h2>كلية جدة الدولية — بوابتك إلى GW</h2>
+      <h2 id="jic-heading">كلية جدة الدولية — بوابتك إلى GW</h2>
     </div>
     <div class="jic-card">
-      <div class="jic-logo">🏛️</div>
+      <div class="jic-logo" aria-hidden="true">🏛️</div>
       <div>
         <h3>جامعة جورج واشنطن × كلية جدة الدولية</h3>
         <p>
@@ -292,41 +327,41 @@
 </section>
 
 <!-- Program Features -->
-<section class="section">
+<section class="section" aria-labelledby="features-heading">
   <div class="container">
     <div class="section-header">
       <div class="section-label">لماذا هذا البرنامج</div>
-      <h2>صُمم للمهندس السعودي العامل</h2>
+      <h2 id="features-heading">صُمم للمهندس السعودي العامل</h2>
       <p class="desc">لا حاجة للتوقف الوظيفي. لا سفر. لا دوام كامل. فقط تقدم — وظيفةً وأكاديميًا.</p>
     </div>
     <div class="feature-grid">
       <div class="feature">
-        <div class="icon">💻</div>
+        <div class="icon" aria-hidden="true">💻</div>
         <h3>100% عن بُعد</h3>
         <p>دراسة غير متزامنة من أي مدينة سعودية. المحاضرات مسجلة. الواجبات مرنة. لا حضور إلزامي.</p>
       </div>
       <div class="feature">
-        <div class="icon">⏱️</div>
+        <div class="icon" aria-hidden="true">⏱️</div>
         <h3>دوام جزئي</h3>
         <p>6–9 ساعات دراسة أسبوعياً فقط. استمر في عملك أثناء تقدمك الأكاديمي. التوازن ممكن.</p>
       </div>
       <div class="feature">
-        <div class="icon">🏅</div>
+        <div class="icon" aria-hidden="true">🏅</div>
         <h3>معتمد ABET</h3>
         <p>نفس الاعتماد الذي تحظى به كلية KFUPM. معترف به من الهيئة السعودية للمهندسين ووزارة التعليم.</p>
       </div>
       <div class="feature">
-        <div class="icon">🗣️</div>
+        <div class="icon" aria-hidden="true">🗣️</div>
         <h3>دعم بالعربية</h3>
         <p>JIC توفر استشارات بالعربي، توجيه أكاديمي، مجموعات دراسية محلية، ودعم تقني على مدار الساعة.</p>
       </div>
       <div class="feature">
-        <div class="icon">🌐</div>
+        <div class="icon" aria-hidden="true">🌐</div>
         <h3>شبكة GW العالمية</h3>
         <p>جامعة R1 بحثية في قلب واشنطن العاصمة. شبكة خريجين في NASA، البنتاغون، وشركات Fortune 500.</p>
       </div>
       <div class="feature">
-        <div class="icon">🇸🇦</div>
+        <div class="icon" aria-hidden="true">🇸🇦</div>
         <h3>مشروع ختامي سعودي</h3>
         <p>مشروع ختامي مخصص لتحديات إدارة الهندسة في المشاريع الضخمة السعودية. ليس نظريًا — عملي.</p>
       </div>
@@ -335,11 +370,11 @@
 </section>
 
 <!-- Timeline -->
-<section class="section" style="background:var(--bg-warm);">
+<section class="section" style="background:var(--bg-warm);" aria-labelledby="timeline-heading">
   <div class="container">
     <div class="section-header">
       <div class="section-label">مسارك الدراسي</div>
-      <h2>من القبول إلى التخرج</h2>
+      <h2 id="timeline-heading">من القبول إلى التخرج</h2>
     </div>
     <div class="timeline">
       <div class="timeline-step"><div class="step-num">1</div><div class="step-title">استشارة مجانية</div><div class="step-desc">30 دقيقة</div></div>
@@ -353,26 +388,26 @@
 </section>
 
 <!-- Vision 2030 -->
-<section class="section">
+<section class="section" aria-labelledby="vision-heading">
   <div class="container">
     <div class="section-header">
       <div class="section-label">السياق السعودي</div>
-      <h2>رؤية 2030 تبحث عن قادة الهندسة</h2>
+      <h2 id="vision-heading">رؤية 2030 تبحث عن قادة الهندسة</h2>
       <p class="desc">مشاريع ضخمة بقيمة تريليونات الريالات تحتاج مهندسين يستطيعون القيادة — ليس فقط التنفيذ.</p>
     </div>
     <div class="feature-grid" style="grid-template-columns: repeat(3, 1fr);">
       <div class="feature">
-        <div class="icon">🏗️</div>
+        <div class="icon" aria-hidden="true">🏗️</div>
         <h3>نيوم</h3>
         <p>500 مليار دولار. مدينة خطية. آلاف مديري المشاريع مطلوبون.</p>
       </div>
       <div class="feature">
-        <div class="icon">🏨</div>
+        <div class="icon" aria-hidden="true">🏨</div>
         <h3>البحر الأحمر</h3>
         <p>50 منتجع فاخر. بنية تحتية مستدامة. هندسة سياحية عالمية.</p>
       </div>
       <div class="feature">
-        <div class="icon">🏠</div>
+        <div class="icon" aria-hidden="true">🏠</div>
         <h3>روشن</h3>
         <p>400 ألف وحدة سكنية. أكبر مشروع تطوير عمراني في التاريخ.</p>
       </div>
@@ -384,25 +419,25 @@
 </section>
 
 <!-- Testimonials -->
-<section class="section" style="background:var(--bg-warm);">
+<section class="section" style="background:var(--bg-warm);" aria-labelledby="testi-heading">
   <div class="container">
     <div class="section-header">
       <div class="section-label">آراء الخريجين</div>
-      <h2>ماذا يقول مهندسونا</h2>
+      <h2 id="testi-heading">ماذا يقول مهندسونا</h2>
     </div>
     <div class="testi-grid">
       <div class="testi">
-        <div class="stars">★★★★★</div>
+        <div class="stars" aria-hidden="true">★★★★★</div>
         <p>"البرنامج غيّر مساري المهني. تعلمت إدارة المشاريع من منظور استراتيجي، وليس فقط تقني. اليوم أقود فريقاً في مشروع ضخم."</p>
         <div class="author"><div class="author-name">أحمد العتيبي</div><div class="author-role">مدير مشروع، شركة إنشاءات سعودية</div></div>
       </div>
       <div class="testi">
-        <div class="stars">★★★★★</div>
+        <div class="stars" aria-hidden="true">★★★★★</div>
         <p>"أهم ما في البرنامج هو المرونة. استمررت في عملي الكامل ودرست في المساء. دعم JIC بالعربي كان فارقًا كبيرًا."</p>
         <div class="author"><div class="author-name">سارة القحطاني</div><div class="author-role">مهندسة أنظمة، قطاع التقنية</div></div>
       </div>
       <div class="testi">
-        <div class="stars">★★★★★</div>
+        <div class="stars" aria-hidden="true">★★★★★</div>
         <p>"شهادة GW فتحت لي أبوابًا لم تكن موجودة. التوظيف الدولي، المشاريع الكبرى، وفرص القيادة — كلها أصبحت ممكنة."</p>
         <div class="author"><div class="author-name">خالد الزهراني</div><div class="author-role">مدير هندسة، NEOM</div></div>
       </div>
@@ -411,7 +446,7 @@
 </section>
 
 <!-- CTA -->
-<section class="cta-section">
+<section class="cta-section" aria-label="دعوة للعمل">
   <div class="container">
     <h2>جاهز للانتقال إلى القيادة؟</h2>
     <p>استشارتك المجانية لمدة 30 دقيقة مع أحد مستشارينا. نناقش أهدافك، نراجع ملفك، ونحدد أفضل مسار لك.</p>
@@ -422,8 +457,10 @@
   </div>
 </section>
 
+</main>
+
 <!-- Footer -->
-<footer>
+<footer role="contentinfo">
   <div class="container">
     <p>© 2026 كلية جدة الدولية — شريك جامعة جورج واشنطن في المملكة العربية السعودية</p>
     <div class="links">
